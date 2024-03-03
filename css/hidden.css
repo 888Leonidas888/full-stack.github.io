@@ -1,0 +1,8 @@
+.hidden-xs.navigation.sidebar,
+.navbar-header,
+div.panel-footer *,
+a.btn.btn-primary,
+button.btn.btn-warning,
+div.panel-heading {
+  display: none;
+}
