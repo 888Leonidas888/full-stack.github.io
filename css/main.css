@@ -65,14 +65,14 @@ li code {
   color: rgb(248, 74, 74);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .container-main {
     width: 90%;
     padding: 0;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container-main {
     width: 80%;
     padding: 0;
