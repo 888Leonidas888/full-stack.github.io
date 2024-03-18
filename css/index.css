@@ -43,7 +43,7 @@ p {
   margin: 40px;
 }
 
-@media screen and (min-width: 480) {
+@media screen and (max-width: 480) {
   li {
     width: 80%;
   }
