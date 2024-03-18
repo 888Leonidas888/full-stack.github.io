@@ -1,25 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+:root {
+  --margin-left: 15px;
+}
+
+/* Oculta los elementos innecesarios */
+div.modal-content,
+.panel-footer,
+.panel-body:last-child,
+.btn-primary,
+div.pathway,
+button.btn.btn-warning,
+.task_progress_score_text,
+.label-info {
+  display: none;
+}
+
 body {
-  background-color: rgb(250, 250, 250);
-  font-family: "Courier New", Courier, monospace;
+  background-color: #eee;
+  font-family: "Roboto", sans-serif;
 }
-
-.container-body {
-  width: 80%;
+.container-main {
+  width: 60%;
+  padding: 50px;
   margin: auto;
+}
+.panel-body {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.panel-default {
+  border: 1px solid #000;
   border-radius: 5px;
-  background-color: white;
-  box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.5);
-  border: 1px solid rgb(237, 228, 228);
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.panel-title,
+.list-group-item {
+  margin-left: var(--margin-left);
+}
+
+pre {
+  border: 1px solid #ccc;
   padding: 15px;
+  overflow-x: auto;
+  background-color: #ccc;
+  overflow-x: auto;
+  border-radius: 5px;
 }
 
-h1 {
-  text-align: center;
+pre {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
+p code,
+li code {
+  font-size: 16px;
+  color: rgb(248, 74, 74);
 }
