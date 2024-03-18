@@ -1,0 +1,1228 @@
+
+        <!DOCTYPE html>
+        <html lang="es">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>api</title>
+            <link rel="stylesheet" href="../css/main.css" />
+          </head>
+          <body>
+            <div class="container-main">
+              
+
+      <div class="sm-gap">
+    <div data-react-class="projects/ProjectHeader" data-react-props="{&quot;metadata&quot;:{&quot;level&quot;:&quot;Amateur&quot;,&quot;author&quot;:&quot;Sylvain Kalache, co-founder at Holberton School&quot;,&quot;weight&quot;:1,&quot;correction&quot;:{&quot;released&quot;:true,&quot;requires_manual_correction&quot;:false},&quot;task_level_review_type&quot;:&quot;Your score will be updated as you progress.&quot;},&quot;project&quot;:{&quot;completion&quot;:100.0,&quot;id&quot;:2076,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/003_color-0c5b38973bfe29fff8dd86f65a213ea2d2499a7d0d9e4549f440c50dc84c9618.png&quot;,&quot;name&quot;:&quot;API&quot;,&quot;score&quot;:{&quot;mandatory&quot;:100.0,&quot;optional&quot;:0.0},&quot;tasksCount&quot;:0},&quot;slackLink&quot;:null,&quot;tags&quot;:[],&quot;videoRoomLink&quot;:null}" data-react-cache-id="projects/ProjectHeader-0"><div class="panel panel-tile project-header"><div class="panel-body" style="align-items: center; display: flex;"><div class="pathway" style="padding: 16px;"><div class="project-circle project-circle-on-tile" style="border-radius: 100%; height: 150px; margin: auto; padding: 5px; width: 150px;"><div data-test-id="CircularProgressbarWithChildren"><div style="position: relative; width: 100%; height: 100%;"><svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar" style="height: 140px; vertical-align: middle; width: 140px;"><path class="CircularProgressbar-trail" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 0px;"></path><path class="CircularProgressbar-path" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 0px;"></path></svg><div data-test-id="CircularProgressbarWithChildren__children" style="position: absolute; width: 100%; height: 100%; margin-top: -100%; display: flex; flex-direction: column; justify-content: center; align-items: center;"><div class="position-relative"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="API"><div class="align-items-center d-flex justify-content-center project-circle-body active" style="border-radius: 100%; height: 124px; width: 124px;"><img alt="Project badge" src="/assets/pathway/003_color-0c5b38973bfe29fff8dd86f65a213ea2d2499a7d0d9e4549f440c50dc84c9618.png" width="60%"></div></span><div class="p-1 position-absolute project-circle-score text-center" style="border-radius: 10px; width: 125px;"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Score of Mandatory Tasks"><span class="d-block">100%</span></span></div></div></div></div></div></div></div><div class="project-info" style="flex-basis: 100%; margin: 16px;"><h1 style="margin: 0px;">API</h1><ul class="list-group metadata" id="project-metadata"><li class="list-group-item"><i aria-hidden="true" class="fa fa-level-up fa-fw"></i> Amateur</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-user fa-fw"></i> By: Sylvain Kalache, co-founder at Holberton School</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-cog fa-fw"></i> Weight: 1</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-check-square fa-fw"></i> Your score will be updated as you progress.</li></ul></div></div></div></div>
+  </div>
+
+
+
+    <div id="project_id" style="display: none" data-project-id="2076"></div>
+
+
+
+      
+
+      
+
+      <div class="panel panel-default" id="project-description">
+  <div class="panel-body">
+    <h2>Background Context</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qn08N7Zx0Lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>Old-school system administrators usually only know Bash and that is what they use to build their scripts. While Bash is perfectly fine for a lot of things, it can quickly get messy and not efficient compared to other programming languages. The new generation of system administrators, usually called SREs, are pretty much regular software engineers but instead of building products, they are managing systems. And one of the big differences with their predecessors is that they know more than just Bash scripting.</p>
+
+<p>One popular way to expose an application and dataset is to use an API. Often, they are the public facing part of websites and micro-services so that allow outsiders to interact with them – access and modify their data. In this project, you will access employee data via an API to organize and export them to different data structures.</p>
+
+<p>This is a perfect example of a task that is not suited for Bash scripting, so let’s build Python scripts.</p>
+
+<h2>Resources</h2>
+
+<p><strong>Read or watch</strong>:</p>
+
+<ul>
+<li><a href="/rltoken/iRuX_VjIFuDLTdMpjJnSFw" title="Friends don't let friends program in shell script" target="_blank">Friends don’t let friends program in shell script</a> </li>
+<li><a href="/rltoken/E7BTWmGqsMlvGfoiyvp3zA" title="What is an API" target="_blank">What is an API</a> </li>
+<li><a href="/rltoken/xfdvNo3t8Judw6CVCSZ48A" title="What is an API? In English, please" target="_blank">What is an API? In English, please</a></li>
+<li><a href="/rltoken/8vtUsjExqwT9SypvpJGtSQ" title="What is a REST API" target="_blank">What is a REST API</a> </li>
+<li><a href="/rltoken/0DbK6G-bv1jC4V1GPPQzrg" title="What are microservices" target="_blank">What are microservices</a> </li>
+<li><a href="/rltoken/7SEHV4FrRLAPY9icO64Bwg" title="PEP8 Python style - having a clean code respecting style guide is really appreciated in the industry" target="_blank">PEP8 Python style - having a clean code respecting style guide is really appreciated in the industry</a> </li>
+</ul>
+
+<h2>Learning Objectives</h2>
+
+<p>At the end of this project, you are expected to be able to <a href="/rltoken/-TUGK2dpC_TyUMZsb60KVQ" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
+
+<h3>General</h3>
+
+<ul>
+<li>What Bash scripting should not be used for</li>
+<li>What is an API</li>
+<li>What is a REST API</li>
+<li>What are microservices</li>
+<li>What is the CSV format</li>
+<li>What is the JSON format</li>
+<li>Pythonic Package and module name style</li>
+<li>Pythonic Class name style</li>
+<li>Pythonic Variable name style</li>
+<li>Pythonic Function name style</li>
+<li>Pythonic Constant name style</li>
+<li>Significance of CapWords or CamelCase in Python</li>
+</ul>
+
+<h2>Requirements</h2>
+
+<h3>General</h3>
+
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be interpreted/compiled on Ubuntu 20.04 LTS using <code>python3</code> (version 3.8.X)</li>
+<li>All your files should end with a new line</li>
+<li>The first line of all your files should be exactly <code>#!/usr/bin/python3</code></li>
+<li><strong>Libraries imported in your Python files must be organized in alphabetical order</strong></li>
+<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
+<li>Your code should use the <code>pycodestyle</code></li>
+<li>All your files must be executable</li>
+<li>The length of your files will be tested using <code>wc</code></li>
+<li>All your modules should have a documentation (<code>python3 -c 'print(__import__("my_module").__doc__)'</code>)</li>
+<li>You must use <a href="/rltoken/MgESLFGCZ7ufM1EOTJ6mWg" title="get" target="_blank">get</a> to access to dictionary value by key (it won’t throw an exception if the key doesn’t exist in the dictionary)</li>
+<li>Your code should not be executed when imported (by using <code>if __name__ == "__main__":</code>)</li>
+</ul>
+
+  </div>
+</div>
+
+
+      
+
+      
+
+        
+          <h2 class="gap">Tasks</h2>
+
+    <div data-role="task18913" data-position="1" id="task-num-0">
+      <div class="panel panel-default task-card " id="task-18913">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      0. Gather data from an API
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+      <div class="task_progress_score_bar" data-task-id="18913" data-correction-id="704522">
+        <div class="task_progress_bar" style="width: 100%;">
+          <div class="task_score_bar" style="width: 100%;">
+          </div>
+        </div>
+        <div class="task_progress_score_text">
+          Score: <span class="task_score_value">100.00%</span> (<span class="task_progress_value">Checks completed: 100.00%</span>)
+        </div>
+      </div>
+
+    <!-- Task Body -->
+    <p>Write a Python script that, using this <a href="/rltoken/XNmscHBY0THdxQXM_MVzdw" title="REST API" target="_blank">REST API</a>, for a given employee ID, returns information about his/her TODO list progress.</p>
+
+<p>Requirements:</p>
+
+<ul>
+<li>You must use <code>urllib</code> or <code>requests</code> module</li>
+<li>The script must accept an integer as a parameter, which is the employee ID</li>
+<li>The script must display on the standard output the employee TODO list progress in this exact format:
+
+<ul>
+<li>First line: <code>Employee EMPLOYEE_NAME is done with tasks(NUMBER_OF_DONE_TASKS/TOTAL_NUMBER_OF_TASKS):</code>
+
+<ul>
+<li><code>EMPLOYEE_NAME</code>: name of the employee</li>
+<li><code>NUMBER_OF_DONE_TASKS</code>: number of completed tasks</li>
+<li><code>TOTAL_NUMBER_OF_TASKS</code>: total number of tasks, which is the sum of completed and non-completed tasks</li>
+</ul></li>
+<li>Second and N next lines display the title of completed tasks: <code>TASK_TITLE</code> (with 1 tabulation and 1 space before the <code>TASK_TITLE</code>)</li>
+</ul></li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code>sylvain@ubuntu$ python3 0-gather_data_from_an_API.py 2
+Employee Ervin Howell is done with tasks(8/20):
+     distinctio vitae autem nihil ut molestias quo
+     voluptas quo tenetur perspiciatis explicabo natus
+     aliquam aut quasi
+     veritatis pariatur delectus
+     nemo perspiciatis repellat ut dolor libero commodi blanditiis omnis
+     repellendus veritatis molestias dicta incidunt
+     excepturi deleniti adipisci voluptatem et neque optio illum ad
+     totam atque quo nesciunt
+sylvain@ubuntu$ python3 0-gather_data_from_an_API.py 4
+Employee Patricia Lebsack is done with tasks(6/20):
+     odit optio omnis qui sunt
+     doloremque aut dolores quidem fuga qui nulla
+     sint amet quia totam corporis qui exercitationem commodi
+     sequi dolorem sed
+     eum ipsa maxime ut
+     tempore molestias dolores rerum sequi voluptates ipsum consequatur
+sylvain@ubuntu$
+sylvain@ubuntu$ python3 0-gather_data_from_an_API.py 4 | tr " " "S" | tr "\t" "T" 
+Employee Patricia Lebsack is done with tasks(6/20):
+TSodit optio omnis qui sunt
+TSdoloremque aut dolores quidem fuga qui nulla
+TSsint amet quia totam corporis qui exercitationem commodi
+TSsequi dolorem sed
+TSeum ipsa maxime ut
+TStempore molestias dolores rerum sequi voluptates ipsum consequatur
+sylvain@ubuntu$
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-back-end</code></li>
+            <li>Directory: <code>api</code></li>
+            <li>File: <code>0-gather_data_from_an_API.py</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="18913" data-batch-id="569" data-toggle="modal" data-target="#task-18913-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-18913-users-done-modal" data-task-id="18913" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "0. Gather data from an API"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="18913" data-toggle="modal" data-target="#task-test-correction-18913-correction-modal" id="task-num-0-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-18913-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "0. Gather data from an API"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="18913">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_cora_coralina-8fb14f943d6d39642bbb7f7be4cb0cc2feafa98ac1edafa75bde0ecb85de7be7.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="18913">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="18913">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+      <button class="btn btn-default btn-sm" data-task-id="18913" data-toggle="modal" data-target="#task-qa-review-18913-modal">
+        QA Review
+      </button>
+      <div class="modal fade task_get_qa_review" id="task-qa-review-18913-modal" data-correction-id="704522" data-task-id="18913">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">0. Gather data from an API</h4>
+            </div>
+            <div class="modal-body">
+                <div class="spinner gap">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <div class="review-container">
+                    <div class="review-corrector"></div>
+                    <div class="review-github well" style="display:none">
+                        <h5>Commit used:</h5>
+                        <ul>
+                            <li style="display:none"><strong>User:</strong> <code class="review-github-id"></code> <span class="review-github-name">---</span></li>
+                            <li style="display:none"><strong>URL:</strong> <a class="review-github-url" target="_blank">Click here</a></li>
+                            <li style="display:none"><strong>ID:</strong> <code class="review-github-commit_id">---</code></li>
+                            <li style="display:none"><strong>Author:</strong> <span class="review-github-committer_username">---</span></li>
+                            <li style="display:none"><strong>Subject:</strong> <em class="review-github-subject">---</em></li>
+                            <li style="display:none"><strong>Date:</strong> <span class="review-github-datetime">---</span></li>
+                        </ul>
+                    </div>
+                    <div class="review-percentage_down"></div>
+                    <ul class="review-checks list-group sm-gap"></ul>
+                    <div class="review-comment"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-success">
+              <span id="task-18913-score-info-score">7</span>/7
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task18914" data-position="2" id="task-num-1">
+      <div class="panel panel-default task-card " id="task-18914">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      1. Export to CSV
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+      <div class="task_progress_score_bar" data-task-id="18914" data-correction-id="704522">
+        <div class="task_progress_bar" style="width: 100%;">
+          <div class="task_score_bar" style="width: 100%;">
+          </div>
+        </div>
+        <div class="task_progress_score_text">
+          Score: <span class="task_score_value">100.00%</span> (<span class="task_progress_value">Checks completed: 100.00%</span>)
+        </div>
+      </div>
+
+    <!-- Task Body -->
+    <p>Using what you did in the task #0, extend your Python script to export data in the CSV format.</p>
+
+<p>Requirements:</p>
+
+<ul>
+<li>Records all tasks that are owned by this employee</li>
+<li>Format must be: <code>"USER_ID","USERNAME","TASK_COMPLETED_STATUS","TASK_TITLE"</code></li>
+<li>File name must be: <code>USER_ID.csv</code></li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code>sylvain@ubuntu$ python3 1-export_to_CSV.py 2
+sylvain@ubuntu$ cat 2.csv
+"2","Antonette","False","suscipit repellat esse quibusdam voluptatem incidunt"
+"2","Antonette","True","distinctio vitae autem nihil ut molestias quo"
+"2","Antonette","False","et itaque necessitatibus maxime molestiae qui quas velit"
+"2","Antonette","False","adipisci non ad dicta qui amet quaerat doloribus ea"
+"2","Antonette","True","voluptas quo tenetur perspiciatis explicabo natus"
+"2","Antonette","True","aliquam aut quasi"
+"2","Antonette","True","veritatis pariatur delectus"
+"2","Antonette","False","nesciunt totam sit blanditiis sit"
+"2","Antonette","False","laborum aut in quam"
+"2","Antonette","True","nemo perspiciatis repellat ut dolor libero commodi blanditiis omnis"
+"2","Antonette","False","repudiandae totam in est sint facere fuga"
+"2","Antonette","False","earum doloribus ea doloremque quis"
+"2","Antonette","False","sint sit aut vero"
+"2","Antonette","False","porro aut necessitatibus eaque distinctio"
+"2","Antonette","True","repellendus veritatis molestias dicta incidunt"
+"2","Antonette","True","excepturi deleniti adipisci voluptatem et neque optio illum ad"
+"2","Antonette","False","sunt cum tempora"
+"2","Antonette","False","totam quia non"
+"2","Antonette","False","doloremque quibusdam asperiores libero corrupti illum qui omnis"
+"2","Antonette","True","totam atque quo nesciunt"
+sylvain@ubuntu$
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-back-end</code></li>
+            <li>Directory: <code>api</code></li>
+            <li>File: <code>1-export_to_CSV.py</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="18914" data-batch-id="569" data-toggle="modal" data-target="#task-18914-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-18914-users-done-modal" data-task-id="18914" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "1. Export to CSV"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="18914" data-toggle="modal" data-target="#task-test-correction-18914-correction-modal" id="task-num-1-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-18914-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "1. Export to CSV"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="18914">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_cora_coralina-8fb14f943d6d39642bbb7f7be4cb0cc2feafa98ac1edafa75bde0ecb85de7be7.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="18914">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="18914">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+      <button class="btn btn-default btn-sm" data-task-id="18914" data-toggle="modal" data-target="#task-qa-review-18914-modal">
+        QA Review
+      </button>
+      <div class="modal fade task_get_qa_review" id="task-qa-review-18914-modal" data-correction-id="704522" data-task-id="18914">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">1. Export to CSV</h4>
+            </div>
+            <div class="modal-body">
+                <div class="spinner gap">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <div class="review-container">
+                    <div class="review-corrector"></div>
+                    <div class="review-github well" style="display:none">
+                        <h5>Commit used:</h5>
+                        <ul>
+                            <li style="display:none"><strong>User:</strong> <code class="review-github-id"></code> <span class="review-github-name">---</span></li>
+                            <li style="display:none"><strong>URL:</strong> <a class="review-github-url" target="_blank">Click here</a></li>
+                            <li style="display:none"><strong>ID:</strong> <code class="review-github-commit_id">---</code></li>
+                            <li style="display:none"><strong>Author:</strong> <span class="review-github-committer_username">---</span></li>
+                            <li style="display:none"><strong>Subject:</strong> <em class="review-github-subject">---</em></li>
+                            <li style="display:none"><strong>Date:</strong> <span class="review-github-datetime">---</span></li>
+                        </ul>
+                    </div>
+                    <div class="review-percentage_down"></div>
+                    <ul class="review-checks list-group sm-gap"></ul>
+                    <div class="review-comment"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-success">
+              <span id="task-18914-score-info-score">5</span>/5
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task18915" data-position="3" id="task-num-2">
+      <div class="panel panel-default task-card " id="task-18915">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      2. Export to JSON
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+      <div class="task_progress_score_bar" data-task-id="18915" data-correction-id="704522">
+        <div class="task_progress_bar" style="width: 100%;">
+          <div class="task_score_bar" style="width: 100%;">
+          </div>
+        </div>
+        <div class="task_progress_score_text">
+          Score: <span class="task_score_value">100.00%</span> (<span class="task_progress_value">Checks completed: 100.00%</span>)
+        </div>
+      </div>
+
+    <!-- Task Body -->
+    <p>Using what you did in the task #0, extend your Python script to export data in the JSON format.</p>
+
+<p>Requirements:</p>
+
+<ul>
+<li>Records all tasks that are owned by this employee</li>
+<li>Format must be: <code>{ "USER_ID": [{"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS, "username": "USERNAME"}, {"task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS, "username": "USERNAME"}, ... ]}</code></li>
+<li>File name must be: <code>USER_ID.json</code></li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code>sylvain@ubuntu$ python3 2-export_to_JSON.py 2
+sylvain@ubuntu$ cat 2.json
+{"2": [{"task": "suscipit repellat esse quibusdam voluptatem incidunt", "completed": false, "username": "Antonette"}, {"task": "distinctio vitae autem nihil ut molestias quo", "completed": true, "username": "Antonette"}, {"task": "et itaque necessitatibus maxime molestiae qui quas velit", "completed": false, "username": "Antonette"}, {"task": "adipisci non ad dicta qui amet quaerat doloribus ea", "completed": false, "username": "Antonette"}, {"task": "voluptas quo tenetur perspiciatis explicabo natus", "completed": true, "username": "Antonette"}, {"task": "aliquam aut quasi", "completed": true, "username": "Antonette"}, {"task": "veritatis pariatur delectus", "completed": true, "username": "Antonette"}, {"task": "nesciunt totam sit blanditiis sit", "completed": false, "username": "Antonette"}, {"task": "laborum aut in quam", "completed": false, "username": "Antonette"}, {"task": "nemo perspiciatis repellat ut dolor libero commodi blanditiis omnis", "completed": true, "username": "Antonette"}, {"task": "repudiandae totam in est sint facere fuga", "completed": false, "username": "Antonette"}, {"task": "earum doloribus ea doloremque quis", "completed": false, "username": "Antonette"}, {"task": "sint sit aut vero", "completed": false, "username": "Antonette"}, {"task": "porro aut necessitatibus eaque distinctio", "completed": false, "username": "Antonette"}, {"task": "repellendus veritatis molestias dicta incidunt", "completed": true, "username": "Antonette"}, {"task": "excepturi deleniti adipisci voluptatem et neque optio illum ad", "completed": true, "username": "Antonette"}, {"task": "sunt cum tempora", "completed": false, "username": "Antonette"}, {"task": "totam quia non", "completed": false, "username": "Antonette"}, {"task": "doloremque quibusdam asperiores libero corrupti illum qui omnis", "completed": false, "username": "Antonette"}, {"task": "totam atque quo nesciunt", "completed": true, "username": "Antonette"}]}sylvain@ubuntu$
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-back-end</code></li>
+            <li>Directory: <code>api</code></li>
+            <li>File: <code>2-export_to_JSON.py</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="18915" data-batch-id="569" data-toggle="modal" data-target="#task-18915-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-18915-users-done-modal" data-task-id="18915" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "2. Export to JSON"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="18915" data-toggle="modal" data-target="#task-test-correction-18915-correction-modal" id="task-num-2-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-18915-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "2. Export to JSON"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="18915">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_cora_coralina-8fb14f943d6d39642bbb7f7be4cb0cc2feafa98ac1edafa75bde0ecb85de7be7.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="18915">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="18915">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+      <button class="btn btn-default btn-sm" data-task-id="18915" data-toggle="modal" data-target="#task-qa-review-18915-modal">
+        QA Review
+      </button>
+      <div class="modal fade task_get_qa_review" id="task-qa-review-18915-modal" data-correction-id="704522" data-task-id="18915">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">2. Export to JSON</h4>
+            </div>
+            <div class="modal-body">
+                <div class="spinner gap">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <div class="review-container">
+                    <div class="review-corrector"></div>
+                    <div class="review-github well" style="display:none">
+                        <h5>Commit used:</h5>
+                        <ul>
+                            <li style="display:none"><strong>User:</strong> <code class="review-github-id"></code> <span class="review-github-name">---</span></li>
+                            <li style="display:none"><strong>URL:</strong> <a class="review-github-url" target="_blank">Click here</a></li>
+                            <li style="display:none"><strong>ID:</strong> <code class="review-github-commit_id">---</code></li>
+                            <li style="display:none"><strong>Author:</strong> <span class="review-github-committer_username">---</span></li>
+                            <li style="display:none"><strong>Subject:</strong> <em class="review-github-subject">---</em></li>
+                            <li style="display:none"><strong>Date:</strong> <span class="review-github-datetime">---</span></li>
+                        </ul>
+                    </div>
+                    <div class="review-percentage_down"></div>
+                    <ul class="review-checks list-group sm-gap"></ul>
+                    <div class="review-comment"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-success">
+              <span id="task-18915-score-info-score">5</span>/5
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task18916" data-position="4" id="task-num-3">
+      <div class="panel panel-default task-card " id="task-18916">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      3. Dictionary of list of dictionaries
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+      <div class="task_progress_score_bar" data-task-id="18916" data-correction-id="704522">
+        <div class="task_progress_bar" style="width: 100%;">
+          <div class="task_score_bar" style="width: 100%;">
+          </div>
+        </div>
+        <div class="task_progress_score_text">
+          Score: <span class="task_score_value">100.00%</span> (<span class="task_progress_value">Checks completed: 100.00%</span>)
+        </div>
+      </div>
+
+    <!-- Task Body -->
+    <p>Using what you did in the task #0, extend your Python script to export data in the JSON format.</p>
+
+<p>Requirements:</p>
+
+<ul>
+<li>Records all tasks from all employees</li>
+<li>Format must be: <code>{ "USER_ID": [ {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, ... ], "USER_ID": [ {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, {"username": "USERNAME", "task": "TASK_TITLE", "completed": TASK_COMPLETED_STATUS}, ... ]}</code></li>
+<li>File name must be: <code>todo_all_employees.json</code></li>
+</ul>
+
+<p>Example:</p>
+
+<pre><code>sylvain@ubuntu$ python3 3-dictionary_of_list_of_dictionaries.py
+sylvain@ubuntu$ cat todo_all_employees.json
+{"1": [{"username": "Bret", "task": "delectus aut autem", "completed": false}, {"username": "Bret", "task": "quis ut nam facilis et officia qui", "completed": false}, {"username": "Bret", "task": "fugiat veniam minus", "completed": false}, {"username": "Bret", "task": "et porro tempora", "completed": true}, {"username": "Bret", "task": "laboriosam mollitia et enim quasi adipisci quia provident illum", "completed": false}, {"username": "Bret", "task": "qui ullam ratione quibusdam voluptatem quia omnis", "completed": false}, {"username": "Bret", "task": "illo expedita consequatur quia in", "completed": false}, {"username": "Bret", "task": "quo adipisci enim quam ut ab", "completed": true}, {"username": "Bret", "task": "molestiae perspiciatis ipsa", "completed": false}, {"username": "Bret", "task": "illo est ratione doloremque quia maiores aut", "completed": true}, {"username": "Bret", "task": "vero rerum temporibus dolor", "completed": true}, {"username": "Bret", "task": "ipsa repellendus fugit nisi", "completed": true}, {"username": "Bret", "task": "et doloremque nulla", "completed": false}, {"username": "Bret", "task": "repellendus sunt dolores architecto voluptatum", "completed": true}, {"username": "Bret", "task": "ab voluptatum amet voluptas", "completed": true}, {"username": "Bret", "task": "accusamus eos facilis sint et aut voluptatem", "completed": true}, {"username": "Bret", "task": "quo laboriosam deleniti aut qui", "completed": true}, {"username": "Bret", "task": "dolorum est consequatur ea mollitia in culpa", "completed": false}, {"username": "Bret", "task": "molestiae ipsa aut voluptatibus pariatur dolor nihil", "completed": true}, {"username": "Bret", "task": "ullam nobis libero sapiente ad optio sint", "completed": true}], "2": [{"username": "Antonette", "task": "suscipit repellat esse quibusdam voluptatem incidunt", "completed": false}, {"username": "Antonette", "task": "distinctio vitae autem nihil ut molestias quo", "completed": true}, {"username": "Antonette", "task": "et itaque necessitatibus maxime molestiae qui quas velit", "completed": false}, {"username": "Antonette", "task": "adipisci non ad dicta qui amet quaerat doloribus ea", "completed": false}, {"username": "Antonette", "task": "voluptas quo tenetur perspiciatis explicabo natus", "completed": true}, {"username": "Antonette", "task": "aliquam aut quasi", "completed": true}, {"username": "Antonette", "task": "veritatis pariatur delectus", "completed": true}, {"username": "Antonette", "task": "nesciunt totam sit blanditiis sit", "completed": false}, {"username": "Antonette", "task": "laborum aut in quam", "completed": false}, {"username": "Antonette", "task": "nemo perspiciatis repellat ut dolor libero commodi blanditiis omnis", "completed": true}, {"username": "Antonette", "task": "repudiandae totam in est sint facere fuga", "completed": false}, {"username": "Antonette", "task": "earum doloribus ea doloremque quis", "completed": false}, {"username": "Antonette", "task": "sint sit aut vero", "completed": false}, {"username": "Antonette", "task": "porro aut necessitatibus eaque distinctio", "completed": false}, {"username": "Antonette", "task": "repellendus veritatis molestias dicta incidunt", "completed": true}, {"username": "Antonette", "task": "excepturi deleniti adipisci voluptatem et neque optio illum ad", "completed": true}, {"username": "Antonette", "task": "sunt cum tempora", "completed": false}, {"username": "Antonette", "task": "totam quia non", "completed": false}, {"username": "Antonette", "task": "doloremque quibusdam asperiores libero corrupti illum qui omnis", "completed": false}, {"username": "Antonette", "task": "totam atque quo nesciunt", "completed": true}], "3": [{"username": "Samantha", "task": "aliquid amet impedit consequatur aspernatur placeat eaque fugiat suscipit", "completed": false}, {"username": "Samantha", "task": "rerum perferendis error quia ut eveniet", "completed": false}, {"username": "Samantha", "task": "tempore ut sint quis recusandae", "completed": true}, {"username": "Samantha", "task": "cum debitis quis accusamus doloremque ipsa natus sapiente omnis", "completed": true}, {"username": "Samantha", "task": "velit soluta adipisci molestias reiciendis harum", "completed": false}, {"username": "Samantha", "task": "vel voluptatem repellat nihil placeat corporis", "completed": false}, {"username": "Samantha", "task": "nam qui rerum fugiat accusamus", "completed": false}, {"username": "Samantha", "task": "sit reprehenderit omnis quia", "completed": false}, {"username": "Samantha", "task": "ut necessitatibus aut maiores debitis officia blanditiis velit et", "completed": false}, {"username": "Samantha", "task": "cupiditate necessitatibus ullam aut quis dolor voluptate", "completed": true}, {"username": "Samantha", "task": "distinctio exercitationem ab doloribus", "completed": false}, {"username": "Samantha", "task": "nesciunt dolorum quis recusandae ad pariatur ratione", "completed": false}, {"username": "Samantha", "task": "qui labore est occaecati recusandae aliquid quam", "completed": false}, {"username": "Samantha", "task": "quis et est ut voluptate quam dolor", "completed": true}, {"username": "Samantha", "task": "voluptatum omnis minima qui occaecati provident nulla voluptatem ratione", "completed": true}, {"username": "Samantha", "task": "deleniti ea temporibus enim", "completed": true}, {"username": "Samantha", "task": "pariatur et magnam ea doloribus similique voluptatem rerum quia", "completed": false}, {"username": "Samantha", "task": "est dicta totam qui explicabo doloribus qui dignissimos", "completed": false}, {"username": "Samantha", "task": "perspiciatis velit id laborum placeat iusto et aliquam odio", "completed": false}, {"username": "Samantha", "task": "et sequi qui architecto ut adipisci", "completed": true}], "4": [{"username": "Karianne", "task": "odit optio omnis qui sunt", "completed": true}, {"username": "Karianne", "task": "et placeat et tempore aspernatur sint numquam", "completed": false}, {"username": "Karianne", "task": "doloremque aut dolores quidem fuga qui nulla", "completed": true}, {"username": "Karianne", "task": "voluptas consequatur qui ut quia magnam nemo esse", "completed": false}, {"username": "Karianne", "task": "fugiat pariatur ratione ut asperiores necessitatibus magni", "completed": false}, {"username": "Karianne", "task": "rerum eum molestias autem voluptatum sit optio", "completed": false}, {"username": "Karianne", "task": "quia voluptatibus voluptatem quos similique maiores repellat", "completed": false}, {"username": "Karianne", "task": "aut id perspiciatis voluptatem iusto", "completed": false}, {"username": "Karianne", "task": "doloribus sint dolorum ab adipisci itaque dignissimos aliquam suscipit", "completed": false}, {"username": "Karianne", "task": "ut sequi accusantium et mollitia delectus sunt", "completed": false}, {"username": "Karianne", "task": "aut velit saepe ullam", "completed": false}, {"username": "Karianne", "task": "praesentium facilis facere quis harum voluptatibus voluptatem eum", "completed": false}, {"username": "Karianne", "task": "sint amet quia totam corporis qui exercitationem commodi", "completed": true}, {"username": "Karianne", "task": "expedita tempore nobis eveniet laborum maiores", "completed": false}, {"username": "Karianne", "task": "occaecati adipisci est possimus totam", "completed": false}, {"username": "Karianne", "task": "sequi dolorem sed", "completed": true}, {"username": "Karianne", "task": "maiores aut nesciunt delectus exercitationem vel assumenda eligendi at", "completed": false}, {"username": "Karianne", "task": "reiciendis est magnam amet nemo iste recusandae impedit quaerat", "completed": false}, {"username": "Karianne", "task": "eum ipsa maxime ut", "completed": true}, {"username": "Karianne", "task": "tempore molestias dolores rerum sequi voluptates ipsum consequatur", "completed": true}], "5": [{"username": "Kamren", "task": "suscipit qui totam", "completed": true}, {"username": "Kamren", "task": "voluptates eum voluptas et dicta", "completed": false}, {"username": "Kamren", "task": "quidem at rerum quis ex aut sit quam", "completed": true}, {"username": "Kamren", "task": "sunt veritatis ut voluptate", "completed": false}, {"username": "Kamren", "task": "et quia ad iste a", "completed": true}, {"username": "Kamren", "task": "incidunt ut saepe autem", "completed": true}, {"username": "Kamren", "task": "laudantium quae eligendi consequatur quia et vero autem", "completed": true}, {"username": "Kamren", "task": "vitae aut excepturi laboriosam sint aliquam et et accusantium", "completed": false}, {"username": "Kamren", "task": "sequi ut omnis et", "completed": true}, {"username": "Kamren", "task": "molestiae nisi accusantium tenetur dolorem et", "completed": true}, {"username": "Kamren", "task": "nulla quis consequatur saepe qui id expedita", "completed": true}, {"username": "Kamren", "task": "in omnis laboriosam", "completed": true}, {"username": "Kamren", "task": "odio iure consequatur molestiae quibusdam necessitatibus quia sint", "completed": true}, {"username": "Kamren", "task": "facilis modi saepe mollitia", "completed": false}, {"username": "Kamren", "task": "vel nihil et molestiae iusto assumenda nemo quo ut", "completed": true}, {"username": "Kamren", "task": "nobis suscipit ducimus enim asperiores voluptas", "completed": false}, {"username": "Kamren", "task": "dolorum laboriosam eos qui iure aliquam", "completed": false}, {"username": "Kamren", "task": "debitis accusantium ut quo facilis nihil quis sapiente necessitatibus", "completed": true}, {"username": "Kamren", "task": "neque voluptates ratione", "completed": false}, {"username": "Kamren", "task": "excepturi a et neque qui expedita vel voluptate", "completed": false}], "6": [{"username": "Leopoldo_Corkery", "task": "explicabo enim cumque porro aperiam occaecati minima", "completed": false}, {"username": "Leopoldo_Corkery", "task": "sed ab consequatur", "completed": false}, {"username": "Leopoldo_Corkery", "task": "non sunt delectus illo nulla tenetur enim omnis", "completed": false}, {"username": "Leopoldo_Corkery", "task": "excepturi non laudantium quo", "completed": false}, {"username": "Leopoldo_Corkery", "task": "totam quia dolorem et illum repellat voluptas optio", "completed": true}, {"username": "Leopoldo_Corkery", "task": "ad illo quis voluptatem temporibus", "completed": true}, {"username": "Leopoldo_Corkery", "task": "praesentium facilis omnis laudantium fugit ad iusto nihil nesciunt", "completed": false}, {"username": "Leopoldo_Corkery", "task": "a eos eaque nihil et exercitationem incidunt delectus", "completed": true}, {"username": "Leopoldo_Corkery", "task": "autem temporibus harum quisquam in culpa", "completed": true}, {"username": "Leopoldo_Corkery", "task": "aut aut ea corporis", "completed": true}, {"username": "Leopoldo_Corkery", "task": "magni accusantium labore et id quis provident", "completed": false}, {"username": "Leopoldo_Corkery", "task": "consectetur impedit quisquam qui deserunt non rerum consequuntur eius", "completed": false}, {"username": "Leopoldo_Corkery", "task": "quia atque aliquam sunt impedit voluptatum rerum assumenda nisi", "completed": false}, {"username": "Leopoldo_Corkery", "task": "cupiditate quos possimus corporis quisquam exercitationem beatae", "completed": false}, {"username": "Leopoldo_Corkery", "task": "sed et ea eum", "completed": false}, {"username": "Leopoldo_Corkery", "task": "ipsa dolores vel facilis ut", "completed": true}, {"username": "Leopoldo_Corkery", "task": "sequi quae est et qui qui eveniet asperiores", "completed": false}, {"username": "Leopoldo_Corkery", "task": "quia modi consequatur vero fugiat", "completed": false}, {"username": "Leopoldo_Corkery", "task": "corporis ducimus ea perspiciatis iste", "completed": false}, {"username": "Leopoldo_Corkery", "task": "dolorem laboriosam vel voluptas et aliquam quasi", "completed": false}], "7": [{"username": "Elwyn.Skiles", "task": "inventore aut nihil minima laudantium hic qui omnis", "completed": true}, {"username": "Elwyn.Skiles", "task": "provident aut nobis culpa", "completed": true}, {"username": "Elwyn.Skiles", "task": "esse et quis iste est earum aut impedit", "completed": false}, {"username": "Elwyn.Skiles", "task": "qui consectetur id", "completed": false}, {"username": "Elwyn.Skiles", "task": "aut quasi autem iste tempore illum possimus", "completed": false}, {"username": "Elwyn.Skiles", "task": "ut asperiores perspiciatis veniam ipsum rerum saepe", "completed": true}, {"username": "Elwyn.Skiles", "task": "voluptatem libero consectetur rerum ut", "completed": true}, {"username": "Elwyn.Skiles", "task": "eius omnis est qui voluptatem autem", "completed": false}, {"username": "Elwyn.Skiles", "task": "rerum culpa quis harum", "completed": false}, {"username": "Elwyn.Skiles", "task": "nulla aliquid eveniet harum laborum libero alias ut unde", "completed": true}, {"username": "Elwyn.Skiles", "task": "qui ea incidunt quis", "completed": false}, {"username": "Elwyn.Skiles", "task": "qui molestiae voluptatibus velit iure harum quisquam", "completed": true}, {"username": "Elwyn.Skiles", "task": "et labore eos enim rerum consequatur sunt", "completed": true}, {"username": "Elwyn.Skiles", "task": "molestiae doloribus et laborum quod ea", "completed": false}, {"username": "Elwyn.Skiles", "task": "facere ipsa nam eum voluptates reiciendis vero qui", "completed": false}, {"username": "Elwyn.Skiles", "task": "asperiores illo tempora fuga sed ut quasi adipisci", "completed": false}, {"username": "Elwyn.Skiles", "task": "qui sit non", "completed": false}, {"username": "Elwyn.Skiles", "task": "placeat minima consequatur rem qui ut", "completed": true}, {"username": "Elwyn.Skiles", "task": "consequatur doloribus id possimus voluptas a voluptatem", "completed": false}, {"username": "Elwyn.Skiles", "task": "aut consectetur in blanditiis deserunt quia sed laboriosam", "completed": true}], "8": [{"username": "Maxime_Nienow", "task": "explicabo consectetur debitis voluptates quas quae culpa rerum non", "completed": true}, {"username": "Maxime_Nienow", "task": "maiores accusantium architecto necessitatibus reiciendis ea aut", "completed": true}, {"username": "Maxime_Nienow", "task": "eum non recusandae cupiditate animi", "completed": false}, {"username": "Maxime_Nienow", "task": "ut eum exercitationem sint", "completed": false}, {"username": "Maxime_Nienow", "task": "beatae qui ullam incidunt voluptatem non nisi aliquam", "completed": false}, {"username": "Maxime_Nienow", "task": "molestiae suscipit ratione nihil odio libero impedit vero totam", "completed": true}, {"username": "Maxime_Nienow", "task": "eum itaque quod reprehenderit et facilis dolor autem ut", "completed": true}, {"username": "Maxime_Nienow", "task": "esse quas et quo quasi exercitationem", "completed": false}, {"username": "Maxime_Nienow", "task": "animi voluptas quod perferendis est", "completed": false}, {"username": "Maxime_Nienow", "task": "eos amet tempore laudantium fugit a", "completed": false}, {"username": "Maxime_Nienow", "task": "accusamus adipisci dicta qui quo ea explicabo sed vero", "completed": true}, {"username": "Maxime_Nienow", "task": "odit eligendi recusandae doloremque cumque non", "completed": false}, {"username": "Maxime_Nienow", "task": "ea aperiam consequatur qui repellat eos", "completed": false}, {"username": "Maxime_Nienow", "task": "rerum non ex sapiente", "completed": true}, {"username": "Maxime_Nienow", "task": "voluptatem nobis consequatur et assumenda magnam", "completed": true}, {"username": "Maxime_Nienow", "task": "nam quia quia nulla repellat assumenda quibusdam sit nobis", "completed": true}, {"username": "Maxime_Nienow", "task": "dolorem veniam quisquam deserunt repellendus", "completed": true}, {"username": "Maxime_Nienow", "task": "debitis vitae delectus et harum accusamus aut deleniti a", "completed": true}, {"username": "Maxime_Nienow", "task": "debitis adipisci quibusdam aliquam sed dolore ea praesentium nobis", "completed": true}, {"username": "Maxime_Nienow", "task": "et praesentium aliquam est", "completed": false}], "9": [{"username": "Delphine", "task": "ex hic consequuntur earum omnis alias ut occaecati culpa", "completed": true}, {"username": "Delphine", "task": "omnis laboriosam molestias animi sunt dolore", "completed": true}, {"username": "Delphine", "task": "natus corrupti maxime laudantium et voluptatem laboriosam odit", "completed": false}, {"username": "Delphine", "task": "reprehenderit quos aut aut consequatur est sed", "completed": false}, {"username": "Delphine", "task": "fugiat perferendis sed aut quidem", "completed": false}, {"username": "Delphine", "task": "quos quo possimus suscipit minima ut", "completed": false}, {"username": "Delphine", "task": "et quis minus quo a asperiores molestiae", "completed": false}, {"username": "Delphine", "task": "recusandae quia qui sunt libero", "completed": false}, {"username": "Delphine", "task": "ea odio perferendis officiis", "completed": true}, {"username": "Delphine", "task": "quisquam aliquam quia doloribus aut", "completed": false}, {"username": "Delphine", "task": "fugiat aut voluptatibus corrupti deleniti velit iste odio", "completed": true}, {"username": "Delphine", "task": "et provident amet rerum consectetur et voluptatum", "completed": false}, {"username": "Delphine", "task": "harum ad aperiam quis", "completed": false}, {"username": "Delphine", "task": "similique aut quo", "completed": false}, {"username": "Delphine", "task": "laudantium eius officia perferendis provident perspiciatis asperiores", "completed": true}, {"username": "Delphine", "task": "magni soluta corrupti ut maiores rem quidem", "completed": false}, {"username": "Delphine", "task": "et placeat temporibus voluptas est tempora quos quibusdam", "completed": false}, {"username": "Delphine", "task": "nesciunt itaque commodi tempore", "completed": true}, {"username": "Delphine", "task": "omnis consequuntur cupiditate impedit itaque ipsam quo", "completed": true}, {"username": "Delphine", "task": "debitis nisi et dolorem repellat et", "completed": true}], "10": [{"username": "Moriah.Stanton", "task": "ut cupiditate sequi aliquam fuga maiores", "completed": false}, {"username": "Moriah.Stanton", "task": "inventore saepe cumque et aut illum enim", "completed": true}, {"username": "Moriah.Stanton", "task": "omnis nulla eum aliquam distinctio", "completed": true}, {"username": "Moriah.Stanton", "task": "molestias modi perferendis perspiciatis", "completed": false}, {"username": "Moriah.Stanton", "task": "voluptates dignissimos sed doloribus animi quaerat aut", "completed": false}, {"username": "Moriah.Stanton", "task": "explicabo odio est et", "completed": false}, {"username": "Moriah.Stanton", "task": "consequuntur animi possimus", "completed": false}, {"username": "Moriah.Stanton", "task": "vel non beatae est", "completed": true}, {"username": "Moriah.Stanton", "task": "culpa eius et voluptatem et", "completed": true}, {"username": "Moriah.Stanton", "task": "accusamus sint iusto et voluptatem exercitationem", "completed": true}, {"username": "Moriah.Stanton", "task": "temporibus atque distinctio omnis eius impedit tempore molestias pariatur", "completed": true}, {"username": "Moriah.Stanton", "task": "ut quas possimus exercitationem sint voluptates", "completed": false}, {"username": "Moriah.Stanton", "task": "rerum debitis voluptatem qui eveniet tempora distinctio a", "completed": true}, {"username": "Moriah.Stanton", "task": "sed ut vero sit molestiae", "completed": false}, {"username": "Moriah.Stanton", "task": "rerum ex veniam mollitia voluptatibus pariatur", "completed": true}, {"username": "Moriah.Stanton", "task": "consequuntur aut ut fugit similique", "completed": true}, {"username": "Moriah.Stanton", "task": "dignissimos quo nobis earum saepe", "completed": true}, {"username": "Moriah.Stanton", "task": "quis eius est sint explicabo", "completed": true}, {"username": "Moriah.Stanton", "task": "numquam repellendus a magnam", "completed": true}, {"username": "Moriah.Stanton", "task": "ipsam aperiam voluptates qui", "completed": false}]}sylvain@ubuntu$
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-back-end</code></li>
+            <li>Directory: <code>api</code></li>
+            <li>File: <code>3-dictionary_of_list_of_dictionaries.py</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="18916" data-batch-id="569" data-toggle="modal" data-target="#task-18916-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-18916-users-done-modal" data-task-id="18916" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "3. Dictionary of list of dictionaries"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="18916" data-toggle="modal" data-target="#task-test-correction-18916-correction-modal" id="task-num-3-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-18916-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "3. Dictionary of list of dictionaries"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="18916">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_cora_coralina-8fb14f943d6d39642bbb7f7be4cb0cc2feafa98ac1edafa75bde0ecb85de7be7.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="18916">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="18916">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+      <button class="btn btn-default btn-sm" data-task-id="18916" data-toggle="modal" data-target="#task-qa-review-18916-modal">
+        QA Review
+      </button>
+      <div class="modal fade task_get_qa_review" id="task-qa-review-18916-modal" data-correction-id="704522" data-task-id="18916">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">3. Dictionary of list of dictionaries</h4>
+            </div>
+            <div class="modal-body">
+                <div class="spinner gap">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <div class="review-container">
+                    <div class="review-corrector"></div>
+                    <div class="review-github well" style="display:none">
+                        <h5>Commit used:</h5>
+                        <ul>
+                            <li style="display:none"><strong>User:</strong> <code class="review-github-id"></code> <span class="review-github-name">---</span></li>
+                            <li style="display:none"><strong>URL:</strong> <a class="review-github-url" target="_blank">Click here</a></li>
+                            <li style="display:none"><strong>ID:</strong> <code class="review-github-commit_id">---</code></li>
+                            <li style="display:none"><strong>Author:</strong> <span class="review-github-committer_username">---</span></li>
+                            <li style="display:none"><strong>Subject:</strong> <em class="review-github-subject">---</em></li>
+                            <li style="display:none"><strong>Date:</strong> <span class="review-github-datetime">---</span></li>
+                        </ul>
+                    </div>
+                    <div class="review-percentage_down"></div>
+                    <ul class="review-checks list-group sm-gap"></ul>
+                    <div class="review-comment"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-success">
+              <span id="task-18916-score-info-score">4</span>/4
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+
+
+
+          <div class="gap">
+  <div data-react-class="projects/ProjectReview" data-react-props="{&quot;correction&quot;:{&quot;statusURI&quot;:&quot;/corrections/704522/status_self_paced.json&quot;,&quot;startReviewURI&quot;:&quot;/corrections/704522/start_auto_review_self_paced.json&quot;},&quot;csrfToken&quot;:&quot;Bs-G7cgYvBORaVP7BYs6-sC0ZEb6SVJyQWVgtq3NPufvfLfPHKMY-GMnKpLHtjDs89wiZ279Qceps8bnUs5Gzw&quot;,&quot;nextProject&quot;:{&quot;details&quot;:{&quot;curriculum_completed&quot;:false,&quot;message&quot;:&quot;Next project: AirBnB clone - RESTful API&quot;,&quot;uri&quot;:&quot;/projects/2131&quot;},&quot;fetchURI&quot;:&quot;/projects/2076/next&quot;},&quot;pollingInterval&quot;:10000,&quot;progress&quot;:{&quot;auto_review&quot;:{&quot;can_execute&quot;:false,&quot;completion&quot;:{&quot;count&quot;:0,&quot;is_completed&quot;:false,&quot;percentage&quot;:0.0},&quot;inability_to_execute_reason&quot;:&quot;done&quot;},&quot;tasks&quot;:[{&quot;id&quot;:18913,&quot;progress_score&quot;:{&quot;progress&quot;:1.0,&quot;score&quot;:1.0},&quot;score_info&quot;:{&quot;passed&quot;:true,&quot;points&quot;:7,&quot;score&quot;:7.0}},{&quot;id&quot;:18914,&quot;progress_score&quot;:{&quot;progress&quot;:1.0,&quot;score&quot;:1.0},&quot;score_info&quot;:{&quot;passed&quot;:true,&quot;points&quot;:5,&quot;score&quot;:5.0}},{&quot;id&quot;:18915,&quot;progress_score&quot;:{&quot;progress&quot;:1.0,&quot;score&quot;:1.0},&quot;score_info&quot;:{&quot;passed&quot;:true,&quot;points&quot;:5,&quot;score&quot;:5.0}},{&quot;id&quot;:18916,&quot;progress_score&quot;:{&quot;progress&quot;:1.0,&quot;score&quot;:1.0},&quot;score_info&quot;:{&quot;passed&quot;:true,&quot;points&quot;:4,&quot;score&quot;:4.0}}],&quot;summary&quot;:{&quot;completion&quot;:100.0,&quot;score&quot;:{&quot;mandatory&quot;:100.0,&quot;optional&quot;:null}},&quot;can_skip&quot;:true,&quot;can_start_peer_review&quot;:false},&quot;peerReview&quot;:null,&quot;project&quot;:{&quot;completion&quot;:100.0,&quot;id&quot;:2076,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/003_color-0c5b38973bfe29fff8dd86f65a213ea2d2499a7d0d9e4549f440c50dc84c9618.png&quot;,&quot;name&quot;:&quot;API&quot;,&quot;score&quot;:{&quot;mandatory&quot;:100.0,&quot;optional&quot;:0.0},&quot;tasksCount&quot;:0},&quot;skipURI&quot;:&quot;/corrections/704522/skip&quot;,&quot;taskLevelReviewTypeHumanized&quot;:&quot;Your score will be updated as you progress.&quot;}" data-react-cache-id="projects/ProjectReview-0"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Score</h3></div><div class="panel-body"><div class="align-items-center d-flex gap-5"><div class="pathway" style="padding: 10px 30px 40px;"><div class="project-circle " style="border-radius: 100%; box-shadow: rgb(229, 230, 230) 10px 20px 10px; height: 125px; margin: auto; padding: 5px; width: 125px;"><div data-test-id="CircularProgressbarWithChildren"><div style="position: relative; width: 100%; height: 100%;"><svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar" style="height: 115px; vertical-align: middle; width: 115px;"><path class="CircularProgressbar-trail" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 0px;"></path><path class="CircularProgressbar-path" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 0px;"></path></svg><div data-test-id="CircularProgressbarWithChildren__children" style="position: absolute; width: 100%; height: 100%; margin-top: -100%; display: flex; flex-direction: column; justify-content: center; align-items: center;"><div class="position-relative"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="API"><div class="align-items-center d-flex justify-content-center project-circle-body active" style="border-radius: 100%; height: 100px; width: 100px;"><img alt="Project badge" src="/assets/pathway/003_color-0c5b38973bfe29fff8dd86f65a213ea2d2499a7d0d9e4549f440c50dc84c9618.png" width="60%"></div></span><div class="p-1 position-absolute project-circle-score text-center" style="border-radius: 10px; width: 100px;"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Score of Mandatory Tasks"><span class="d-block">100%</span></span></div></div></div></div></div></div></div><div style="flex-basis: 100%;"><p class="mb-2 text-primary"><span>Congratulations! You made it!</span></p><div><p>Next project: AirBnB clone - RESTful API</p></div><div class="d-flex flex-wrap gap-3 justify-content-between mt-4"><div class="btn-group"><a class="btn btn-primary" href="/projects/2131"><i aria-hidden="true" class="fa fa-code-fork"></i><span class="ml-2">Open the next project</span></a></div><div></div></div></div></div></div></div></div>
+</div>
+
+
+
+          <div class="modal fade" id="container-specs-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title">Recommended Sandbox</h4></div><div class="modal-body"><div data-react-class="user_containers/ContainerSpecs" data-react-props="{&quot;containerModelName&quot;:&quot;Sandbox&quot;,&quot;containerSpecs&quot;:[{&quot;description&quot;:&quot;\u003cp\u003eBasic Ubuntu 20.04, with vim, emacs, curl, wget and all needed for Holberton Foundations\u003c/p\u003e\n&quot;,&quot;id&quot;:39,&quot;name&quot;:&quot;Ubuntu 20.04&quot;,&quot;online&quot;:true,&quot;container&quot;:{&quot;container_id&quot;:&quot;84c5972585b01374ba8fccdf3a7b03792b99b28c3e2c838158a05d49775535bf&quot;,&quot;id&quot;:33704,&quot;restart_uri&quot;:&quot;/user_containers/33704/restart.json&quot;,&quot;status&quot;:&quot;running&quot;,&quot;uri&quot;:&quot;/user_containers/33704.json&quot;,&quot;wake_uri&quot;:&quot;/user_containers/33704/wake.json&quot;,&quot;webterm_uri&quot;:&quot;/user_containers/33704/webterm&quot;,&quot;host&quot;:&quot;84c5972585b0.f89d4f98.hbtn-cod.io&quot;,&quot;password&quot;:&quot;c45dd1c767cc203393fc&quot;,&quot;ports&quot;:{&quot;22&quot;:34004,&quot;4000&quot;:33999,&quot;5000&quot;:33998,&quot;80&quot;:34003,&quot;8000&quot;:33996,&quot;3000&quot;:34001,&quot;3306&quot;:34000,&quot;443&quot;:34002,&quot;5001&quot;:33997,&quot;8080&quot;:33995}}}],&quot;containersLimit&quot;:5,&quot;csrfToken&quot;:&quot;tWfHrqkPsMlecxtFGi3lCN3Q5GxR52l2-Iu8k8T4U19c1PaMfbQUIqw9YizYEO8e7riiTcVTesMQXRrCO_srdw&quot;,&quot;startStatusURI&quot;:&quot;/user_containers/start_status.json&quot;,&quot;startURI&quot;:&quot;/user_containers/start.json&quot;}" data-react-cache-id="user_containers/ContainerSpecs-0"><div><div class="d-flex gap-4 sandboxes-filters"><a class="btn btn-outline-primary"><i aria-hidden="true" class="fa fa-filter"></i><span class="ml-2">Running only</span></a><div class="align-items-center d-flex" style="position: relative; width: 100%;"><input class="form-control" placeholder="Search for an image ..." type="search" value=""></div></div><div class="mt-3"><h3>1 image<small class="ml-2">(1/5 Sandboxes spawned)</small></h3></div><div class="mt-3"><div class="panel panel-default"><div class="panel-body border-left-success" style="border-left: 6px solid;"><div class="align-items-center d-flex flex-wrap justify-content-between"><div><h3 class="mt-0"><i aria-hidden="true" class="fa fa-terminal text-success"></i><span class="ml-2">Ubuntu 20.04</span></h3><div class="mt-2 text-muted"><p>Basic Ubuntu 20.04, with vim, emacs, curl, wget and all needed for Holberton Foundations</p>
+</div></div><div class="d-flex flex-wrap gap-5"><div class="align-items-center d-flex gap-3"><div><span data-container="body" data-html="false" data-placement="top" data-toggle="tooltip" title="" data-original-title="Copy SSH command"><span role="button"><button class="btn btn-default">SSH</button></span></span></div><div><span data-container="body" data-html="false" data-placement="top" data-toggle="tooltip" title="" data-original-title="Copy SFTP command"><span role="button"><button class="btn btn-default">SFTP</button></span></span></div><a class="btn btn-webterm" href="/user_containers/33704/webterm" rel="noreferrer" target="_blank"><i aria-hidden="true" class="fa fa-terminal"></i><span class="ml-2">Webterm</span></a></div><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Restart your Sandbox"><a class="btn btn-warning "><i aria-hidden="true" class="fa fa-power-off"></i><span class="ml-2">Restart</span></a></span><a class="btn btn-danger"><i aria-hidden="true" class="fa fa-trash"></i><span class="ml-2">Destroy</span></a></div></div><div class="d-flex flex-wrap gap-5 mt-3"><div class="p-4" style="flex-shrink: 0;"><div class="d-flex flex-column gap-3"><h4 class="mt-0"><i aria-hidden="true" class="fa fa-user text-info"></i><span class="ml-2">Credentials</span></h4><div class="d-flex gap-2"><strong>Host</strong><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Click to copy"><span role="button"><small>84c5972585b0.f89d4f98.hbtn-cod.io</small></span></span></div><div class="d-flex gap-2"><strong>Username</strong><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Click to copy"><span role="button"><small>84c5972585b0</small></span></span></div><div class="d-flex gap-2"><strong>Password</strong><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Click to copy"><span role="button"><small>c45dd1c767cc203393fc</small></span></span></div></div></div><div class="p-4" style="flex: 1 1 40%;"><div class="d-flex flex-column gap-3"><h4 class="mt-0"><i aria-hidden="true" class="fa fa-globe text-info"></i><span class="ml-2">Web access</span></h4><div class="align-items-center d-flex flex-wrap gap-2"><a class="btn btn-outline-primary" href="https://84c5972585b0.f89d4f98.hbtn-cod.io" rel="noreferrer" target="_blank">HTTPS</a><a class="btn btn-outline-primary" href="http://84c5972585b0.f89d4f98.hbtn-cod.io" rel="noreferrer" target="_blank">HTTP</a><a class="btn btn-default" href="http://84c5972585b0.f89d4f98.hbtn-cod.io:3000" rel="noreferrer" target="_blank">3000</a><a class="btn btn-default" href="http://84c5972585b0.f89d4f98.hbtn-cod.io:4000" rel="noreferrer" target="_blank">4000</a><a class="btn btn-default" href="http://84c5972585b0.f89d4f98.hbtn-cod.io:5000" rel="noreferrer" target="_blank">5000</a><a class="btn btn-default" href="http://84c5972585b0.f89d4f98.hbtn-cod.io:5001" rel="noreferrer" target="_blank">5001</a><a class="btn btn-default" href="http://84c5972585b0.f89d4f98.hbtn-cod.io:8000" rel="noreferrer" target="_blank">8000</a><a class="btn btn-default" href="http://84c5972585b0.f89d4f98.hbtn-cod.io:8080" rel="noreferrer" target="_blank">8080</a></div></div></div><div class="p-4" style="flex: 1 1 35%;"><div class="d-flex flex-column gap-3"><h4 class="mt-0"><i aria-hidden="true" class="fa fa-map-signs text-info"></i><span class="ml-2">Port mapping</span></h4><div class="align-items-center d-flex flex-wrap"><div class="align-items-center text-primary d-flex gap-2" style="padding: 5px 10px;"><strong>SSH</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34004</span></div><div class="align-items-center text-primary d-flex gap-2" style="padding: 5px 10px;"><strong>HTTP</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34003</span></div><div class="align-items-center text-primary d-flex gap-2" style="padding: 5px 10px;"><strong>HTTPS</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34002</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>3000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34001</span></div><div class="align-items-center text-primary d-flex gap-2" style="padding: 5px 10px;"><strong>MySQL</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34000</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>4000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>33999</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>5000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>33998</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>5001</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>33997</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>8000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>33996</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>8080</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>33995</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+          <div class="modal fade" id="sandboxes-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title">Recommended Sandboxes</h4></div><div class="modal-body"><div data-react-class="user_sandboxes/Sandboxes" data-react-props="{&quot;images&quot;:[{&quot;id&quot;:16,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;US East (N. Virginia)\t&quot;},{&quot;id&quot;:50,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;US East (N. Virginia)\t&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;South America (São Paulo)&quot;},{&quot;id&quot;:51,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;South America (São Paulo)&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;Europe (Paris)&quot;},{&quot;id&quot;:52,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;Europe (Paris)&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;Asia Pacific (Sydney)&quot;},{&quot;id&quot;:53,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;Asia Pacific (Sydney)&quot;}],&quot;sandboxesUri&quot;:&quot;/user_sandboxes&quot;,&quot;csrfToken&quot;:&quot;dD9DSs4w7YStWfVxy-cVWtKSvuus1m-bdnaK_VKEUvCdjHJoGotJb18XjBgJ2h9M4fr4yjhifC6eoCysrYcq2A&quot;,&quot;maxNumberOfContainers&quot;:2}" data-react-cache-id="user_sandboxes/Sandboxes-0"><div class="d-flex flex-column"><div class="dropdown pull-right" style="align-self: end;"><button aria-expanded="false" aria-haspopup="true" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" type="button">New sandbox <span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-right"><li class="divider" role="separator"></li><li class="dropdown-header">US East (N. Virginia)	</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">South America (São Paulo)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">Europe (Paris)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">Asia Pacific (Sydney)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li></ul></div><div class="mt-2 alert alert-info">No sandboxes yet!</div></div></div></div></div></div></div>
+
+      <div class="d-flex justify-content-around align-items-center">
+          <div>
+            <a data-toggle="tooltip" title="" class="btn btn-primary" role="button" href="/projects/2130" data-original-title="AirBnB clone - Web framework">Previous project</a>
+          </div>
+          <form action="/corrections/704522/skip" method="post">
+            <input name="authenticity_token" type="hidden" value="I4Vpzg4J8oZ_z-MOP_U28HcexgH9SLlvijxzFSYI_4DKNljs2rJWbY2Bmmf9yDzmRHaAIGn8qtpi6tVE2QuHqA">
+            <button class="btn btn-warning" type="submit">
+              Next project
+            </button>
+          </form>
+      </div>
+  
+            </div>
+          </body>
+        </html>
+      
