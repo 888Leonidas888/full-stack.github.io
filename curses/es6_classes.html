@@ -1,0 +1,2781 @@
+
+        <!DOCTYPE html>
+        <html lang="es">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>es6_classes</title>
+            <link rel="stylesheet" href="../css/main.css" />
+          </head>
+          <body>
+            <div class="container-main">
+              
+
+      <div class="sm-gap">
+    <div data-react-class="projects/ProjectHeader" data-react-props="{&quot;metadata&quot;:{&quot;level&quot;:&quot;Amateur&quot;,&quot;author&quot;:&quot;Johann Kerbrat, Engineering Manager at Uber Works&quot;,&quot;weight&quot;:1,&quot;correction&quot;:{&quot;released&quot;:true,&quot;requires_manual_correction&quot;:false},&quot;task_level_review_type&quot;:&quot;Your score will be updated as you progress.&quot;},&quot;project&quot;:{&quot;completion&quot;:0.0,&quot;id&quot;:2347,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/008_color-6b592c04ed919674c933172ac165e566e41da4c0e3f457997b6b7f6b50e454a5.png&quot;,&quot;name&quot;:&quot;ES6 classes&quot;,&quot;score&quot;:{&quot;mandatory&quot;:null,&quot;optional&quot;:null},&quot;tasksCount&quot;:1},&quot;slackLink&quot;:null,&quot;tags&quot;:[],&quot;videoRoomLink&quot;:null}" data-react-cache-id="projects/ProjectHeader-0"><div class="panel panel-tile project-header"><div class="panel-body" style="align-items: center; display: flex;"><div class="pathway" style="padding: 16px;"><div class="project-circle project-circle-on-tile" style="border-radius: 100%; height: 150px; margin: auto; padding: 5px; width: 150px;"><div data-test-id="CircularProgressbarWithChildren"><div style="position: relative; width: 100%; height: 100%;"><svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar" style="height: 140px; vertical-align: middle; width: 140px;"><path class="CircularProgressbar-trail" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 0px;"></path><path class="CircularProgressbar-path" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 304.734px;"></path></svg><div data-test-id="CircularProgressbarWithChildren__children" style="position: absolute; width: 100%; height: 100%; margin-top: -100%; display: flex; flex-direction: column; justify-content: center; align-items: center;"><div style="height: 100%; position: absolute; transform: rotate(0turn);"><div class="circular-progress-bar-radial-separator" style="height: 4%; width: 8px;"></div></div><div class="position-relative"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="ES6 classes"><div class="align-items-center d-flex justify-content-center project-circle-body active" style="border-radius: 100%; height: 124px; width: 124px;"><img alt="Project badge" src="/assets/pathway/008_color-6b592c04ed919674c933172ac165e566e41da4c0e3f457997b6b7f6b50e454a5.png" width="60%"></div></span></div></div></div></div></div></div><div class="project-info" style="flex-basis: 100%; margin: 16px;"><h1 style="margin: 0px;">ES6 classes</h1><ul class="list-group metadata" id="project-metadata"><li class="list-group-item"><i aria-hidden="true" class="fa fa-level-up fa-fw"></i> Amateur</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-user fa-fw"></i> By: Johann Kerbrat, Engineering Manager at Uber Works</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-cog fa-fw"></i> Weight: 1</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-check-square fa-fw"></i> Your score will be updated as you progress.</li></ul></div></div></div></div>
+  </div>
+
+
+
+    <div id="project_id" style="display: none" data-project-id="2347"></div>
+
+
+
+      
+
+      
+
+      <div class="panel panel-default" id="project-description">
+  <div class="panel-body">
+    <p><img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2019/12/817248fb77fb5c2cef3f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240318%2Feu-west-3%2Fs3%2Faws4_request&amp;X-Amz-Date=20240318T195034Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=24051cb6d4532d0394f59cded7eb9ab898792bcbb5f345fa740b06da2ae01ec9" alt="" loading="lazy" style=""></p>
+
+<h2>Resources</h2>
+
+<p><strong>Read or watch</strong>:</p>
+
+<ul>
+<li><a href="/rltoken/AJdJxuoO8o3hwpybQaFSDQ" title="Classes" target="_blank">Classes</a></li>
+<li><a href="/rltoken/jF42Fw5HNIPnFWKmDzVg1g" title="Metaprogramming" target="_blank">Metaprogramming</a></li>
+</ul>
+
+<h2>Learning Objectives</h2>
+
+<p>At the end of this project, you are expected to be able to <a href="/rltoken/njFFGENoXPXVPrxCyuHqMg" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
+
+<ul>
+<li>How to define a Class</li>
+<li>How to add methods to a class</li>
+<li>Why and how to add a static method to a class</li>
+<li>How to extend a class from another</li>
+<li>Metaprogramming and symbols</li>
+</ul>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>All your files will be executed on Ubuntu 18.04 LTS using NodeJS 12.11.x</li>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code>, <code>Visual Studio Code</code></li>
+<li>All your files should end with a new line</li>
+<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
+<li>Your code should use the <code>js</code> extension</li>
+<li>Your code will be tested using <code>Jest</code> and the command <code>npm run test</code></li>
+<li>Your code will be verified against lint using ESLint</li>
+<li>Your code needs to pass all the tests and lint. You can verify the entire project running <code>npm run full-test</code></li>
+</ul>
+
+<h2>Setup</h2>
+
+<h3>Install NodeJS 12.11.x</h3>
+
+<p>(in your home directory): </p>
+
+<pre><code>curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install nodejs -y
+</code></pre>
+
+<pre><code>$ nodejs -v
+v12.11.1
+$ npm -v
+6.11.3
+</code></pre>
+
+<h3>Install Jest, Babel, and ESLint</h3>
+
+<p>in your project directory: </p>
+
+<ul>
+<li>Install Jest using: <code>npm install --save-dev jest</code></li>
+<li>Install Babel using: <code>npm install --save-dev babel-jest @babel/core @babel/preset-env</code></li>
+<li>Install ESLint using: <code>npm install --save-dev eslint</code></li>
+</ul>
+
+<h2>Configuration files</h2>
+
+<h3><code>package.json</code></h3>
+
+<details>
+<summary>
+Click to show/hide file contents</summary>
+<pre><code>
+{
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "check-lint": "lint [0-9]*.js",
+    "dev": "npx babel-node",
+    "test": "jest",
+    "full-test": "./node_modules/.bin/eslint [0-9]*.js &amp;&amp; jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/node": "^7.8.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "jest": "^24.9.0"
+  }
+}
+</code>
+</pre>
+</details>
+
+<h3><code>babel.config.js</code></h3>
+
+<details>
+<summary>
+Click to show/hide file contents</summary>
+<pre><code>
+module.exports = {
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
+  ],
+};
+</code>
+</pre>
+</details>
+
+<h3><code>.eslintrc.js</code></h3>
+
+<details>
+<summary>Click to show/hide file contents</summary>
+<pre><code>
+module.exports = {
+  env: {
+    browser: false,
+    es6: true,
+    jest: true,
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:jest/all',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['jest'],
+  rules: {
+    'max-classes-per-file': 'off',
+    'no-underscore-dangle': 'off',
+    'no-console': 'off',
+    'no-shadow': 'off',
+    'no-restricted-syntax': [
+      'error',
+      'LabeledStatement',
+      'WithStatement',
+    ],
+  },
+  overrides:[
+    {
+      files: ['*.js'],
+      excludedFiles: 'babel.config.js',
+    }
+  ]
+};
+</code>
+</pre>
+</details>
+
+<h3>and…</h3>
+
+<p>Don’t forget to run <code>$ npm install</code> when you have the <code>package.json</code></p>
+
+  </div>
+</div>
+
+
+      
+
+      
+
+        
+          <h2 class="gap">Tasks</h2>
+
+    <div data-role="task21481" data-position="1" id="task-num-0">
+      <div class="panel panel-default task-card " id="task-21481">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      0. You used to attend a place like this at some point
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Implement a class named <code>ClassRoom</code>:</p>
+
+<ul>
+<li>Prototype: <code>export default class ClassRoom</code></li>
+<li>It should accept one attribute named <code>maxStudentsSize</code> (Number) and assigned to <code>_maxStudentsSize</code></li>
+</ul>
+
+<pre><code>bob@dylan:~$ cat 0-main.js
+import ClassRoom from "./0-classroom.js";
+
+const room = new ClassRoom(10);
+console.log(room._maxStudentsSize)
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 0-main.js 
+10
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>0-classroom.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21481" data-batch-id="569" data-toggle="modal" data-target="#task-21481-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21481-users-done-modal" data-task-id="21481" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "0. You used to attend a place like this at some point"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21481" data-toggle="modal" data-target="#task-test-correction-21481-correction-modal" id="task-num-0-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21481-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "0. You used to attend a place like this at some point"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21481">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21481">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21481">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21481-score-info-score">0</span>/2
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21482" data-position="2" id="task-num-1">
+      <div class="panel panel-default task-card " id="task-21482">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      1. Let's make some classrooms
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Import the <code>ClassRoom</code> class from <code>0-classroom.js</code>. </p>
+
+<p>Implement a function named <code>initializeRooms</code>. It should return an array of 3 <code>ClassRoom</code> objects with the sizes 19, 20, and 34 (in this order).</p>
+
+<pre><code>bob@dylan:~$ cat 1-main.js
+import initializeRooms from './1-make_classrooms.js';
+
+console.log(initializeRooms());
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 1-main.js 
+[
+  ClassRoom { _maxStudentsSize: 19 },
+  ClassRoom { _maxStudentsSize: 20 },
+  ClassRoom { _maxStudentsSize: 34 }
+]
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>1-make_classrooms.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21482" data-batch-id="569" data-toggle="modal" data-target="#task-21482-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21482-users-done-modal" data-task-id="21482" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "1. Let's make some classrooms"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21482" data-toggle="modal" data-target="#task-test-correction-21482-correction-modal" id="task-num-1-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21482-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "1. Let's make some classrooms"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21482">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21482">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21482">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21482-score-info-score">0</span>/3
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21483" data-position="3" id="task-num-2">
+      <div class="panel panel-default task-card " id="task-21483">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      2. A Course, Getters, and Setters
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Implement a class named <code>HolbertonCourse</code>:</p>
+
+<ul>
+<li>Constructor attributes: 
+
+<ul>
+<li><code>name</code> (String)</li>
+<li><code>length</code> (Number)</li>
+<li><code>students</code> (array of Strings)</li>
+</ul></li>
+<li>Make sure to verify the type of attributes during object creation</li>
+<li>Each attribute must be stored in an “underscore” attribute version (ex: <code>name</code> is stored in <code>_name</code>)</li>
+<li>Implement a getter and setter for each attribute. </li>
+</ul>
+
+<pre><code>bob@dylan:~$ cat 2-main.js
+import HolbertonCourse from "./2-hbtn_course.js";
+
+const c1 = new HolbertonCourse("ES6", 1, ["Bob", "Jane"])
+console.log(c1.name);
+c1.name = "Python 101";
+console.log(c1);
+
+try {
+    c1.name = 12;
+} 
+catch(err) {
+    console.log(err);
+}
+
+try {
+    const c2 = new HolbertonCourse("ES6", "1", ["Bob", "Jane"]);
+}
+catch(err) {
+    console.log(err);
+}
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 2-main.js 
+ES6
+HolbertonCourse {
+  _name: 'Python 101',
+  _length: 1,
+  _students: [ 'Bob', 'Jane' ]
+}
+TypeError: Name must be a string
+    ...
+TypeError: Length must be a number
+    ...
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>2-hbtn_course.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21483" data-batch-id="569" data-toggle="modal" data-target="#task-21483-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21483-users-done-modal" data-task-id="21483" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "2. A Course, Getters, and Setters"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21483" data-toggle="modal" data-target="#task-test-correction-21483-correction-modal" id="task-num-2-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21483-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "2. A Course, Getters, and Setters"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21483">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21483">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21483">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21483-score-info-score">0</span>/5
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21484" data-position="4" id="task-num-3">
+      <div class="panel panel-default task-card " id="task-21484">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      3. Methods, static methods, computed methods names..... MONEY
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Implement a class named <code>Currency</code>:</p>
+
+<ul>
+<li>- Constructor attributes: 
+
+<ul>
+<li><code>code</code> (String)</li>
+<li><code>name</code> (String)</li>
+</ul></li>
+<li>Each attribute must be stored in an “underscore” attribute version (ex: <code>name</code> is stored in <code>_name</code>)</li>
+<li>Implement a getter and setter for each attribute. </li>
+<li>Implement a method named <code>displayFullCurrency</code> that will return the attributes in the following format <code>name (code)</code>.</li>
+</ul>
+
+<pre><code>bob@dylan:~$ cat 3-main.js
+import Currency from "./3-currency.js";
+
+const dollar = new Currency('$', 'Dollars');
+console.log(dollar.displayFullCurrency());
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 3-main.js 
+Dollars ($)
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>3-currency.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21484" data-batch-id="569" data-toggle="modal" data-target="#task-21484-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21484-users-done-modal" data-task-id="21484" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "3. Methods, static methods, computed methods names..... MONEY"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21484" data-toggle="modal" data-target="#task-test-correction-21484-correction-modal" id="task-num-3-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21484-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "3. Methods, static methods, computed methods names..... MONEY"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21484">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21484">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21484">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21484-score-info-score">0</span>/3
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21485" data-position="5" id="task-num-4">
+      <div class="panel panel-default task-card " id="task-21485">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      4. Pricing
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Import the class <code>Currency</code> from <code>3-currency.js</code></p>
+
+<p>Implement a class named <code>Pricing</code>:</p>
+
+<ul>
+<li>Constructor attributes: 
+
+<ul>
+<li><code>amount</code> (Number)</li>
+<li><code>currency</code> (Currency)</li>
+</ul></li>
+<li>Each attribute must be stored in an “underscore” attribute version (ex: <code>name</code> is stored in <code>_name</code>)</li>
+<li>Implement a getter and setter for each attribute. </li>
+<li>Implement a method named <code>displayFullPrice</code> that returns the attributes in the following format <code>amount currency_name (currency_code)</code>.</li>
+<li>Implement a static method named <code>convertPrice</code>. It should accept two arguments: <code>amount</code> (Number), <code>conversionRate</code> (Number). The function should return the amount multiplied by the conversion rate.</li>
+</ul>
+
+<pre><code>bob@dylan:~$ cat 4-main.js
+import Pricing from './4-pricing.js';
+import Currency from './3-currency.js';
+
+const p = new Pricing(100, new Currency("EUR", "Euro"))
+console.log(p);
+console.log(p.displayFullPrice());
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 4-main.js 
+Pricing {
+  _amount: 100,
+  _currency: Currency { _code: 'EUR', _name: 'Euro' }
+}
+100 Euro (EUR)
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>4-pricing.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21485" data-batch-id="569" data-toggle="modal" data-target="#task-21485-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21485-users-done-modal" data-task-id="21485" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "4. Pricing"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21485" data-toggle="modal" data-target="#task-test-correction-21485-correction-modal" id="task-num-4-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21485-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "4. Pricing"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21485">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21485">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21485">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21485-score-info-score">0</span>/3
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21486" data-position="6" id="task-num-5">
+      <div class="panel panel-default task-card " id="task-21486">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      5. A Building
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Implement a class named <code>Building</code>:</p>
+
+<ul>
+<li>Constructor attributes: 
+
+<ul>
+<li><code>sqft</code> (Number)</li>
+</ul></li>
+<li>Each attribute must be stored in an “underscore” attribute version (ex: <code>name</code> is stored in <code>_name</code>)</li>
+<li>Implement a getter for each attribute.</li>
+<li>Consider this class as an abstract class. And make sure that any class that extends from it should implement a method named <code>evacuationWarningMessage</code>.
+
+<ul>
+<li>If a class that extends from it does not have a <code>evacuationWarningMessage</code> method, throw an error with the message <code>Class extending Building must override evacuationWarningMessage</code></li>
+</ul></li>
+</ul>
+
+<pre><code>bob@dylan:~$ cat 5-main.js
+import Building from './5-building.js';
+
+const b = new Building(100);
+console.log(b);
+
+class TestBuilding extends Building {}
+
+try {
+    new TestBuilding(200)
+}
+catch(err) {
+    console.log(err);
+}
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 5-main.js 
+Building { _sqft: 100 }
+Error: Class extending Building must override evacuationWarningMessage
+    ...
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>5-building.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21486" data-batch-id="569" data-toggle="modal" data-target="#task-21486-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21486-users-done-modal" data-task-id="21486" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "5. A Building"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21486" data-toggle="modal" data-target="#task-test-correction-21486-correction-modal" id="task-num-5-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21486-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "5. A Building"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21486">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21486">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21486">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21486-score-info-score">0</span>/3
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21487" data-position="7" id="task-num-6">
+      <div class="panel panel-default task-card " id="task-21487">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      6. Inheritance
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Import <code>Building</code> from <code>5-building.js</code>.</p>
+
+<p>Implement a class named <code>SkyHighBuilding</code> that extends from <code>Building</code>:</p>
+
+<ul>
+<li>Constructor attributes: 
+
+<ul>
+<li><code>sqft</code> (Number) (must be assigned to the parent class <code>Building</code>)</li>
+<li><code>floors</code> (Number)</li>
+</ul></li>
+<li>Each attribute must be stored in an “underscore” attribute version (ex: <code>name</code> is stored in <code>_name</code>)</li>
+<li>Implement a getter for each attribute. </li>
+<li>Override the method named <code>evacuationWarningMessage</code> and return the following string <code>Evacuate slowly the NUMBER_OF_FLOORS floors</code>.</li>
+</ul>
+
+<pre><code>bob@dylan:~$ cat 6-main.js
+import SkyHighBuilding from './6-sky_high.js';
+
+const building = new SkyHighBuilding(140, 60);
+console.log(building.sqft);
+console.log(building.floors);
+console.log(building.evacuationWarningMessage());
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 6-main.js 
+140
+60
+Evacuate slowly the 60 floors
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>6-sky_high.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21487" data-batch-id="569" data-toggle="modal" data-target="#task-21487-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21487-users-done-modal" data-task-id="21487" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "6. Inheritance"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21487" data-toggle="modal" data-target="#task-test-correction-21487-correction-modal" id="task-num-6-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21487-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "6. Inheritance"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21487">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21487">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21487">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21487-score-info-score">0</span>/2
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21488" data-position="8" id="task-num-7">
+      <div class="panel panel-default task-card " id="task-21488">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      7. Airport
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Implement a class named <code>Airport</code>:</p>
+
+<ul>
+<li>Constructor attributes: 
+
+<ul>
+<li><code>name</code> (String)</li>
+<li><code>code</code> (String)</li>
+</ul></li>
+<li>Each attribute must be stored in an “underscore” attribute version (ex: <code>name</code> is stored in <code>_name</code>)</li>
+<li>The default string description of the class should return the airport <code>code</code> (example below).</li>
+</ul>
+
+<pre><code>bob@dylan:~$ cat 7-main.js
+import Airport from "./7-airport.js";
+
+const airportSF = new Airport('San Francisco Airport', 'SFO');
+console.log(airportSF);
+console.log(airportSF.toString());
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 7-main.js 
+Airport [SFO] { _name: 'San Francisco Airport', _code: 'SFO' }
+[object SFO]
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>7-airport.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21488" data-batch-id="569" data-toggle="modal" data-target="#task-21488-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21488-users-done-modal" data-task-id="21488" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "7. Airport"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21488" data-toggle="modal" data-target="#task-test-correction-21488-correction-modal" id="task-num-7-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21488-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "7. Airport"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21488">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21488">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21488">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21488-score-info-score">0</span>/2
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21489" data-position="9" id="task-num-8">
+      <div class="panel panel-default task-card " id="task-21489">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      8. Primitive - Holberton Class
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Implement a class named <code>HolbertonClass</code>:</p>
+
+<ul>
+<li>Constructor attributes: 
+
+<ul>
+<li><code>size</code> (Number)</li>
+<li><code>location</code> (String)</li>
+</ul></li>
+<li>Each attribute must be stored in an “underscore” attribute version (ex: <code>name</code> is stored in <code>_name</code>)</li>
+<li>When the class is cast into a <code>Number</code>, it should return the size. </li>
+<li>When the class is cast into a <code>String</code>, it should return the location.</li>
+</ul>
+
+<pre><code>bob@dylan:~$ cat 8-main.js
+import HolbertonClass from "./8-hbtn_class.js";
+
+const hc = new HolbertonClass(12, "Mezzanine")
+console.log(Number(hc));
+console.log(String(hc));
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 8-main.js 
+12
+Mezzanine
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>8-hbtn_class.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21489" data-batch-id="569" data-toggle="modal" data-target="#task-21489-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21489-users-done-modal" data-task-id="21489" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "8. Primitive - Holberton Class"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21489" data-toggle="modal" data-target="#task-test-correction-21489-correction-modal" id="task-num-8-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21489-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "8. Primitive - Holberton Class"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21489">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21489">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21489">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21489-score-info-score">0</span>/3
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21490" data-position="10" id="task-num-9">
+      <div class="panel panel-default task-card " id="task-21490">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      9. Hoisting
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Fix this code and make it work.</p>
+
+<pre><code>const class2019 = new HolbertonClass(2019, 'San Francisco');
+const class2020 = new HolbertonClass(2020, 'San Francisco');
+
+export class HolbertonClass {
+  constructor(year, location) {
+    this._year = year;
+    this._location = location;
+  }
+
+  get year() {
+    return this._year;
+  }
+
+  get location() {
+    return this._location;
+  }
+}
+
+const student1 = new StudentHolberton('Guillaume', 'Salva', class2020);
+const student2 = new StudentHolberton('John', 'Doe', class2020);
+const student3 = new StudentHolberton('Albert', 'Clinton', class2019);
+const student4 = new StudentHolberton('Donald', 'Bush', class2019);
+const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
+
+export class StudentHolberton {
+  constructor(firstName, lastName) {
+    this._firstName = firstName;
+    this._lastName = lastName;
+    this._holbertonClass = holbertonClass;
+  }
+
+  get fullName() {
+    return `${this._firstName} ${this._lastName}`;
+  }
+
+  get holbertonClass() {
+    return this.holbertonClass;
+  }
+
+  get fullStudentDescription() {
+    return `${self._firstName} ${self._lastName} - ${self._holbertonClass.year} - ${self._holbertonClass.location}`;
+  }
+}
+
+
+export const listOfStudents = [student1, student2, student3, student4, student5];
+</code></pre>
+
+<p>Result:</p>
+
+<pre><code>bob@dylan:~$ cat 9-main.js
+import listOfStudents from "./9-hoisting.js";
+
+console.log(listOfStudents);
+
+const listPrinted = listOfStudents.map(
+    student =&gt; student.fullStudentDescription
+);
+
+console.log(listPrinted)
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 9-main.js
+[
+  StudentHolberton {
+    _firstName: 'Guillaume',
+    _lastName: 'Salva',
+    _holbertonClass: HolbertonClass { _year: 2020, _location: 'San Francisco' }
+  },
+  StudentHolberton {
+    _firstName: 'John',
+    _lastName: 'Doe',
+    _holbertonClass: HolbertonClass { _year: 2020, _location: 'San Francisco' }
+  },
+  StudentHolberton {
+    _firstName: 'Albert',
+    _lastName: 'Clinton',
+    _holbertonClass: HolbertonClass { _year: 2019, _location: 'San Francisco' }
+  },
+  StudentHolberton {
+    _firstName: 'Donald',
+    _lastName: 'Bush',
+    _holbertonClass: HolbertonClass { _year: 2019, _location: 'San Francisco' }
+  },
+  StudentHolberton {
+    _firstName: 'Jason',
+    _lastName: 'Sandler',
+    _holbertonClass: HolbertonClass { _year: 2019, _location: 'San Francisco' }
+  }
+]
+[
+  'Guillaume Salva - 2020 - San Francisco',
+  'John Doe - 2020 - San Francisco',
+  'Albert Clinton - 2019 - San Francisco',
+  'Donald Bush - 2019 - San Francisco',
+  'Jason Sandler - 2019 - San Francisco'
+]
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>9-hoisting.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21490" data-batch-id="569" data-toggle="modal" data-target="#task-21490-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21490-users-done-modal" data-task-id="21490" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "9. Hoisting"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21490" data-toggle="modal" data-target="#task-test-correction-21490-correction-modal" id="task-num-9-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21490-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "9. Hoisting"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21490">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21490">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21490">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21490-score-info-score">0</span>/4
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21491" data-position="11" id="task-num-10">
+      <div class="panel panel-default task-card " id="task-21491">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      10. Vroom
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Implement a class named <code>Car</code>:</p>
+
+<ul>
+<li>Constructor attributes: 
+
+<ul>
+<li><code>brand</code> (String)</li>
+<li><code>motor</code> (String)</li>
+<li><code>color</code> (String)</li>
+</ul></li>
+<li>Each attribute must be stored in an “underscore” attribute version (ex: <code>name</code> is stored in <code>_name</code>)</li>
+<li>Add a method named <code>cloneCar</code>. This method should return a new object of the class.</li>
+</ul>
+
+<p>Hint: Symbols in ES6</p>
+
+<pre><code>bob@dylan:~$ cat 10-main.js
+import Car from "./10-car.js";
+
+class TestCar extends Car {}
+
+const tc1 = new TestCar("Nissan", "Turbo", "Pink");
+const tc2 = tc1.cloneCar();
+
+console.log(tc1);
+console.log(tc1 instanceof TestCar);
+
+console.log(tc2);
+console.log(tc2 instanceof TestCar);
+
+console.log(tc1 == tc2);
+
+bob@dylan:~$ 
+bob@dylan:~$ npm run dev 10-main.js
+TestCar { _brand: 'Nissan', _motor: 'Turbo', _color: 'Pink' }
+true
+TestCar { _brand: undefined, _motor: undefined, _color: undefined }
+true
+false
+bob@dylan:~$ 
+</code></pre>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_back_end</code></li>
+            <li>Directory: <code>ES6_classes</code></li>
+            <li>File: <code>10-car.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21491" data-batch-id="569" data-toggle="modal" data-target="#task-21491-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21491-users-done-modal" data-task-id="21491" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "10. Vroom"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21491" data-toggle="modal" data-target="#task-test-correction-21491-correction-modal" id="task-num-10-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21491-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "10. Vroom"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21491">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                            <div class="pre-check-message">
+                                <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                                    <img src="/assets/checker_whm_pre_donna_shirley-3bb252970ce467b7340eff4111827c4fb76f67053dd3bd5ebe8b5d783e2112d4.png">
+                                </a>
+                            </div>
+                    </center>
+                </div>
+                <div class="result"></div>
+                    <div class="post-check-message">
+                        <a href="https://twitter.com/hashtag/HbtnWomensHistoryMonth" target="_blank">
+                            <img src="/assets/checker_whm_post_womens_history_month-5140e882d9690e81ad77197ee8507610229081cdeb6ceaa291c72c8cfebdedf7.png">
+                        </a>
+                    </div>
+
+                <div class="help">
+    <button data-task-id="21491">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21491">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21491-score-info-score">0</span>/3
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+
+    <p class="lg-gap">
+      <a class="btn btn-primary btn-block" data-confirm="Are you sure? Make sure you focused on the mandatory tasks first" href="/projects/2347/unlock_optionals">Done with the mandatory tasks? Unlock 1 advanced task now!</a>
+    </p>
+
+
+          <div class="gap">
+  <div data-react-class="projects/ProjectReview" data-react-props="{&quot;correction&quot;:{&quot;statusURI&quot;:&quot;/corrections/704650/status_self_paced.json&quot;,&quot;startReviewURI&quot;:&quot;/corrections/704650/start_auto_review_self_paced.json&quot;},&quot;csrfToken&quot;:&quot;41stXD4zNcwUTkSJpsyTYSBY492CJcvl0f0Ev_i4_f9UI_cNnK1EltfcRoElXksYG8LEFDynToPcAO6CTNdbrA&quot;,&quot;nextProject&quot;:{&quot;details&quot;:{&quot;curriculum_completed&quot;:false,&quot;message&quot;:&quot;Next project: ES6 Basics&quot;,&quot;uri&quot;:&quot;/projects/2345&quot;},&quot;fetchURI&quot;:&quot;/projects/2347/next&quot;},&quot;pollingInterval&quot;:10000,&quot;progress&quot;:{&quot;auto_review&quot;:{&quot;can_execute&quot;:true,&quot;completion&quot;:{&quot;count&quot;:0,&quot;is_completed&quot;:false,&quot;percentage&quot;:0.0},&quot;inability_to_execute_reason&quot;:null},&quot;tasks&quot;:[{&quot;id&quot;:21481,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:2,&quot;score&quot;:0}},{&quot;id&quot;:21482,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:3,&quot;score&quot;:0}},{&quot;id&quot;:21483,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:5,&quot;score&quot;:0}},{&quot;id&quot;:21484,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:3,&quot;score&quot;:0}},{&quot;id&quot;:21485,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:3,&quot;score&quot;:0}},{&quot;id&quot;:21486,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:3,&quot;score&quot;:0}},{&quot;id&quot;:21487,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:2,&quot;score&quot;:0}},{&quot;id&quot;:21488,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:2,&quot;score&quot;:0}},{&quot;id&quot;:21489,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:3,&quot;score&quot;:0}},{&quot;id&quot;:21490,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:4,&quot;score&quot;:0}},{&quot;id&quot;:21491,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:3,&quot;score&quot;:0}}],&quot;summary&quot;:{&quot;completion&quot;:0.0,&quot;score&quot;:{&quot;mandatory&quot;:null,&quot;optional&quot;:null}},&quot;can_skip&quot;:true,&quot;can_start_peer_review&quot;:false},&quot;peerReview&quot;:null,&quot;project&quot;:{&quot;completion&quot;:0.0,&quot;id&quot;:2347,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/008_color-6b592c04ed919674c933172ac165e566e41da4c0e3f457997b6b7f6b50e454a5.png&quot;,&quot;name&quot;:&quot;ES6 classes&quot;,&quot;score&quot;:{&quot;mandatory&quot;:null,&quot;optional&quot;:null},&quot;tasksCount&quot;:1},&quot;skipURI&quot;:&quot;/corrections/704650/skip&quot;,&quot;taskLevelReviewTypeHumanized&quot;:&quot;Your score will be updated as you progress.&quot;}" data-react-cache-id="projects/ProjectReview-0"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Score</h3></div><div class="panel-body"><div class="align-items-center d-flex gap-5"><div class="pathway" style="padding: 10px 30px 40px;"><div class="project-circle " style="border-radius: 100%; box-shadow: rgb(229, 230, 230) 10px 20px 10px; height: 125px; margin: auto; padding: 5px; width: 125px;"><div data-test-id="CircularProgressbarWithChildren"><div style="position: relative; width: 100%; height: 100%;"><svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar" style="height: 115px; vertical-align: middle; width: 115px;"><path class="CircularProgressbar-trail" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 0px;"></path><path class="CircularProgressbar-path" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 304.734px;"></path></svg><div data-test-id="CircularProgressbarWithChildren__children" style="position: absolute; width: 100%; height: 100%; margin-top: -100%; display: flex; flex-direction: column; justify-content: center; align-items: center;"><div style="height: 100%; position: absolute; transform: rotate(0turn);"><div class="circular-progress-bar-radial-separator" style="height: 4%; width: 8px;"></div></div><div class="position-relative"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="ES6 classes"><div class="align-items-center d-flex justify-content-center project-circle-body active" style="border-radius: 100%; height: 100px; width: 100px;"><img alt="Project badge" src="/assets/pathway/008_color-6b592c04ed919674c933172ac165e566e41da4c0e3f457997b6b7f6b50e454a5.png" width="60%"></div></span></div></div></div></div></div></div><div style="flex-basis: 100%;"><p class="mb-2 text-primary"><span>Your score will be updated as you progress.</span></p><p>Please review <strong>all the tasks</strong> before you start the peer review.</p><div class="d-flex flex-wrap gap-3 justify-content-between mt-4"><div class="btn-group"><button class="btn btn-primary" id="project-launch-review-btn"><i aria-hidden="true" class="fa fa-paper-plane"></i><span class="ml-2">Review all the tasks</span></button></div><div></div></div></div></div></div></div></div>
+</div>
+
+
+
+          <div class="modal fade" id="container-specs-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title">Recommended Sandbox</h4></div><div class="modal-body"><div data-react-class="user_containers/ContainerSpecs" data-react-props="{&quot;containerModelName&quot;:&quot;Sandbox&quot;,&quot;containerSpecs&quot;:[{&quot;description&quot;:&quot;\u003cp\u003eUbuntu 18.04 with Node 12\u003c/p\u003e\n&quot;,&quot;id&quot;:29,&quot;name&quot;:&quot;Ubuntu 18.04 - Node 12&quot;,&quot;online&quot;:true}],&quot;containersLimit&quot;:5,&quot;csrfToken&quot;:&quot;vwL_gmGXt75mfJk4XhFJ09wxSbKNJATj7MJEOxBUnHkIeiXTwwnG5KXumzDdg5Gq56tuezOmgYXhP64GpDs6Kg&quot;,&quot;startStatusURI&quot;:&quot;/user_containers/start_status.json&quot;,&quot;startURI&quot;:&quot;/user_containers/start.json&quot;}" data-react-cache-id="user_containers/ContainerSpecs-0"><div><div class="d-flex gap-4 sandboxes-filters"><a class="btn btn-outline-primary"><i aria-hidden="true" class="fa fa-filter"></i><span class="ml-2">Running only</span></a><div class="align-items-center d-flex" style="position: relative; width: 100%;"><input class="form-control" placeholder="Search for an image ..." type="search" value=""></div></div><div class="mt-3"><h3>1 image<small class="ml-2">(0/5 Sandboxes spawned)</small></h3></div><div class="mt-3"><div class="panel panel-default"><div class="panel-body"><div class="align-items-center d-flex flex-wrap justify-content-between"><div><h3 class="mt-0"><i aria-hidden="true" class="fa fa-terminal text-danger"></i><span class="ml-2">Ubuntu 18.04 - Node 12</span></h3><div class="mt-2 text-muted"><p>Ubuntu 18.04 with Node 12</p>
+</div></div><div class="d-flex flex-wrap gap-5"><a class="btn btn-success"><i aria-hidden="true" class="fa fa-play"></i><span class="ml-2">Run</span></a></div></div></div></div></div></div></div></div></div></div></div>
+          <div class="modal fade" id="sandboxes-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title">Recommended Sandboxes</h4></div><div class="modal-body"><div data-react-class="user_sandboxes/Sandboxes" data-react-props="{&quot;images&quot;:[{&quot;id&quot;:16,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;US East (N. Virginia)\t&quot;},{&quot;id&quot;:50,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;US East (N. Virginia)\t&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;South America (São Paulo)&quot;},{&quot;id&quot;:51,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;South America (São Paulo)&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;Europe (Paris)&quot;},{&quot;id&quot;:52,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;Europe (Paris)&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;Asia Pacific (Sydney)&quot;},{&quot;id&quot;:53,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;Asia Pacific (Sydney)&quot;}],&quot;sandboxesUri&quot;:&quot;/user_sandboxes&quot;,&quot;csrfToken&quot;:&quot;Lj34XXXsQohkvvPD6NQfgCgfUHJewSUT6hfBJvefZUiZRSIM13Iz0qcs8ctrRsf5E4V3u-BDoHXn6isbQ_DDGw&quot;,&quot;maxNumberOfContainers&quot;:2}" data-react-cache-id="user_sandboxes/Sandboxes-0"><div class="d-flex flex-column"><div class="dropdown pull-right" style="align-self: end;"><button aria-expanded="false" aria-haspopup="true" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" type="button">New sandbox <span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-right"><li class="divider" role="separator"></li><li class="dropdown-header">US East (N. Virginia)	</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">South America (São Paulo)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">Europe (Paris)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">Asia Pacific (Sydney)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li></ul></div><div class="mt-2 alert alert-info">No sandboxes yet!</div></div></div></div></div></div></div>
+
+      <div class="d-flex justify-content-around align-items-center">
+          <div>
+            <a data-toggle="tooltip" title="" class="btn btn-primary" role="button" href="/projects/2868" data-original-title="JavaScript DOM manipulation">Previous project</a>
+          </div>
+          <form action="/corrections/704650/skip" method="post">
+            <input name="authenticity_token" type="hidden" value="_EFjzL4oa2oKML0zy76SC1sxxxicUO7xAX0DJ_KiyIdLObmdHLYaMMmivztILEpyYKvg0SLSa5cMgOkaRs1u1A">
+            <button class="btn btn-warning" type="submit">
+              Next project
+            </button>
+          </form>
+      </div>
+  
+            </div>
+          </body>
+        </html>
+      
