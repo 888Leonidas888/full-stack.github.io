@@ -7,7 +7,8 @@
 /* Oculta los elementos innecesarios */
 div.modal-content,
 .panel-footer,
-.panel-body:last-child,
+div.gap,
+/* .panel-default:last-child, */
 .btn-primary,
 div.pathway,
 button.btn.btn-warning,
