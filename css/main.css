@@ -114,4 +114,12 @@ li code {
     width: 98%;
     margin: auto;
   }
+
+  .panel-body img {
+    width: 100%;
+  }
+
+  iframe{
+    width: 100%;
+  }
 }
