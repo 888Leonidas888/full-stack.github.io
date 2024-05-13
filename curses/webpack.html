@@ -1,0 +1,995 @@
+
+        <!DOCTYPE html>
+        <html lang="es">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>webpack</title>
+            <link rel="stylesheet" href="../css/main.css" />
+          </head>
+          <body>
+            <div class="container-main">
+              
+
+      <div class="sm-gap">
+    <div data-react-class="projects/ProjectHeader" data-react-props="{&quot;metadata&quot;:{&quot;level&quot;:&quot;Amateur&quot;,&quot;author&quot;:&quot;Johann Kerbrat, Engineering Manager at Uber Works&quot;,&quot;weight&quot;:1,&quot;migrated_to_sasheck&quot;:false,&quot;correction&quot;:{&quot;released&quot;:true,&quot;requires_manual_correction&quot;:false},&quot;task_level_review_type&quot;:&quot;Your score will be updated as you progress.&quot;},&quot;project&quot;:{&quot;completion&quot;:25.0,&quot;id&quot;:2349,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/009_color-1c484ff7ce829f9ae6ec8e19d1ad2f93a6fe01f0f2ea5142fe2125bd9ff0190b.png&quot;,&quot;name&quot;:&quot;Webpack&quot;,&quot;score&quot;:{&quot;mandatory&quot;:61.11,&quot;optional&quot;:0.0},&quot;tasksCount&quot;:0},&quot;slackLink&quot;:null,&quot;tags&quot;:[],&quot;videoRoomLink&quot;:null}" data-react-cache-id="projects/ProjectHeader-0"><div class="panel panel-tile project-header"><div class="panel-body" style="align-items: center; display: flex;"><div class="pathway" style="padding: 16px;"><div class="project-circle project-circle-on-tile" style="border-radius: 100%; height: 150px; margin: auto; padding: 5px; width: 150px;"><div data-test-id="CircularProgressbarWithChildren"><div style="position: relative; width: 100%; height: 100%;"><svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar" style="height: 140px; vertical-align: middle; width: 140px;"><path class="CircularProgressbar-trail" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 0px;"></path><path class="CircularProgressbar-path" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 228.551px;"></path></svg><div data-test-id="CircularProgressbarWithChildren__children" style="position: absolute; width: 100%; height: 100%; margin-top: -100%; display: flex; flex-direction: column; justify-content: center; align-items: center;"><div class="position-relative"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Webpack"><div class="align-items-center d-flex justify-content-center project-circle-body active" style="border-radius: 100%; height: 124px; width: 124px;"><img alt="Project badge" src="/assets/pathway/009_color-1c484ff7ce829f9ae6ec8e19d1ad2f93a6fe01f0f2ea5142fe2125bd9ff0190b.png" width="60%"></div></span><div class="p-1 position-absolute project-circle-score text-center" style="border-radius: 10px; width: 125px;"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Score of Mandatory Tasks"><span class="d-block">61.11%</span></span></div></div></div></div></div></div></div><div class="project-info" style="flex-basis: 100%; margin: 16px;"><h1 style="margin: 0px;">Webpack</h1><ul class="list-group metadata" id="project-metadata"><li class="list-group-item"><i aria-hidden="true" class="fa fa-level-up fa-fw"></i> Amateur</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-user fa-fw"></i> By: Johann Kerbrat, Engineering Manager at Uber Works</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-cog fa-fw"></i> Weight: 1</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-rocket fa-fw"></i> Migrated to checker v2: <i aria-hidden="true" class="fa fa-times fa-fw"></i></li><li class="list-group-item"><i aria-hidden="true" class="fa fa-check-square fa-fw"></i> Your score will be updated as you progress.</li></ul></div></div></div></div>
+  </div>
+
+
+
+    <div id="project_id" style="display: none" data-project-id="2349"></div>
+
+
+
+      
+
+      
+
+      <div class="panel panel-default" id="project-description">
+  <div class="panel-body">
+    <p><img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2019/12/121b1f6534e60566e1de.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240513%2Feu-west-3%2Fs3%2Faws4_request&amp;X-Amz-Date=20240513T162751Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=7149e6391eb0eeaa5a6fe6709aeea4902816a537a8f9ca6d767f6c91a20832af" alt="" loading="lazy" style=""></p>
+
+<h2>Resources</h2>
+
+<p><strong>Read or watch</strong>:</p>
+
+<ul>
+<li><a href="/rltoken/j_Eo1Fx5ddlAk_8R4YK95g" title="Webpack documentation" target="_blank">Webpack documentation</a></li>
+<li><a href="/rltoken/6ddGUw-ILl5oTqDoc-uzTg" title="Webpack beginner guide" target="_blank">Webpack beginner guide</a></li>
+<li><a href="/rltoken/vbLU_yBRAvppEHxSnWla0g" title="npm-package.json" target="_blank">npm-package.json</a></li>
+</ul>
+
+<h2>Learning Objectives</h2>
+
+<p>At the end of this project, you are expected to be able to <a href="/rltoken/Jro3_KRVPzkj6zLjvs1mVQ" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
+
+<ul>
+<li>How to setup Webpack for a basic project</li>
+<li>Entry points, output, and loaders</li>
+<li>How to add plugins</li>
+<li>How to split your code into chunks</li>
+<li>How to setup a dev server</li>
+</ul>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>All of your code will be executed on Ubuntu 18.04 LTS using Node <code>12.x.x</code></li>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code>, <code>Visual Studio Code</code></li>
+<li>All of your files should end with a new line</li>
+<li>A <code>README.md</code> file at the root of the folder of the project is mandatory</li>
+</ul>
+
+<h4>Holberton Logo:</h4>
+
+<p><img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2019/11/175b85183ecedb529e14.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240513%2Feu-west-3%2Fs3%2Faws4_request&amp;X-Amz-Date=20240513T162751Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=aacb6ee86d81023e2eb3990de938d5bf634d2bbaca1f057244220bb0c6b1ab55" alt="" loading="lazy" style=""></p>
+
+  </div>
+</div>
+
+
+      
+
+      
+
+        
+          <h2 class="gap">Tasks</h2>
+
+    <div data-role="task21505" data-position="1" id="task-num-0">
+      <div class="panel panel-default task-card " id="task-21505">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      0. Basic setup
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Create and run Webpack using a basic installation.</p>
+
+<ul>
+<li>Create a folder named <code>task_0</code>.</li>
+<li>Install <code>webpack</code> and <code>webpack-cli</code>  as developer dependencies within the folder using <code>npm</code>.</li>
+<li>Install <code>jQuery</code> as a regular dependency using <code>npm</code>.</li>
+<li>Make sure that <code>webpack</code> and <code>webpack-cli</code> are listed under the devDependencies key along with <code>jQuery</code> being listed under the dependencies key within the package.json</li>
+<li>Create a <code>src</code> directory with a <code>index.js</code> in it. </li>
+<li>The file should import <code>jquery</code> and add three different paragraphs to the page body: (refer to this <a href="/rltoken/XJSRYhglsAljFvprI-PcDQ" title="link" target="_blank">link</a> under the Babel section for importing jQuery)</li>
+</ul>
+
+<pre><code>Holberton Dashboard
+
+Dashboard data for the students
+
+Copyright - Holberton School
+</code></pre>
+
+<ul>
+<li>Create a <code>dist/index.html</code>. Import your <code>main.js</code> in the body.</li>
+<li>You must use <code>jQuery</code> to add the elements to the body of the page.</li>
+<li>When running <code>Webpack</code>, your <code>javascript</code> and <code>html</code> files should be generated in a <code>dist</code> folder.</li>
+<li>You should not use a custom <code>webpack</code> config file.</li>
+<li>Opening your main file should not generate any error in the console.</li>
+<li>Your <code>html</code> code should only import one <code>Javascript</code> script (the one generated by <code>webpack</code>).</li>
+<li>Do NOT push your <code>dist/main.js</code> if you have one.</li>
+</ul>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_react</code></li>
+            <li>Directory: <code>Webpack</code></li>
+            <li>File: <code>task_0/package.json, task_0/src/index.js, task_0/dist/index.html</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21505" data-batch-id="569" data-toggle="modal" data-target="#task-21505-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21505-users-done-modal" data-task-id="21505" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "0. Basic setup"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21505" data-toggle="modal" data-target="#task-test-correction-21505-correction-modal" id="task-num-0-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21505-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "0. Basic setup"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info"><strong>Congratulations!</strong> All tests passed successfully!<br>You are ready for your next mission!</div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21505" data-last-request-id="11616915">Start a new test</button>
+                        <button class="btn btn-default close-modal" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error" style="display: none;"></div>
+                        <div class="info" style="display: none;"></div>
+
+
+                    </center>
+                </div>
+                <div class="result" style="display: block;"><hr><h4>Result:</h4><div class="well"><h5>Commit used:</h5><ul><li><b>URL: </b><a target="_blank" href="https://github.com/888Leonidas888/holbertonschool-web_react/tree/f12931ab20f789cddccaa1f41c7fd927b61b3503">Click here</a></li><li><b>ID: </b><code>f12931ab20f789cddccaa1f41c7fd927b61b3503</code></li><li><b>Author: </b><span>Jhony</span></li><li><b>Subject: </b><em>chore(package.json): corrige error.</em></li><li><b>Date: </b><span>2024-05-12 22:10:30 -0500</span></li></ul></div><div class="check-inline requirement success" id="148539" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 0</div><div class="check-inline requirement success" id="148543" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 1</div><div class="check-inline requirement success" id="148540" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 2</div><div class="check-inline requirement success" id="148541" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 3</div><div class="check-inline requirement success" id="148542" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 4</div><div class="check-inline requirement success" id="148544" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 5</div><div class="check-inline code success" id="148545" title="Correct output of your code - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 6</div><div class="check-inline code success" id="148546" title="Correct output of your code - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 7</div><div class="check-inline code success" id="148547" title="Correct output of your code - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 8</div></div>
+
+                <div class="help" style="display: block;">
+    <button data-task-id="21505">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21505">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-success">
+              <span id="task-21505-score-info-score">7</span>/7
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21506" data-position="2" id="task-num-1">
+      <div class="panel panel-default task-card " id="task-21506">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      1. Learning how to use Webpack with a config file
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p><strong>Installing packages</strong></p>
+
+<ul>
+<li>Create a folder named <code>task_1</code>, <code>cd</code> into it, and create a package.json using <code>npm init -y</code></li>
+<li>Install webpack (dev dependency), jQuery (dependency), and Lodash (dependency) within the folder using <code>npm</code>.</li>
+<li>Modify your <code>package.json</code> to add a <code>build</code> script that runs <code>webpack</code> to create build output. This lets you execute <code>npm run build</code> on the command line. </li>
+</ul>
+
+<p><strong>Using jQuery</strong></p>
+
+<ul>
+<li>Create a <code>js</code> directory with a javascript file named <code>dashboard_main.js</code> in it. The file should import <code>jquery</code> and add the below elements in the following order:
+
+<ul>
+<li>Paragraph element: <code>Holberton Dashboard</code></li>
+<li>Paragraph element: <code>Dashboard data for the students</code></li>
+<li>Button element with the text <code>Click here to get started</code></li>
+<li>Add a paragraph element as so <code>&lt;p id='count'&gt;&lt;/p&gt;</code></li>
+<li>Add another paragraph: <code>Copyright - Holberton School</code></li>
+</ul></li>
+</ul>
+
+<p><strong>Prevent spammers</strong></p>
+
+<ul>
+<li>Write a function called <code>updateCounter()</code> that tracks the number of times the button element has been clicked. </li>
+<li>Each time it’s called, update the count by 1 and set the content of the paragraph element with id=‘count’ to <code>{count} clicks on the button</code></li>
+<li>Bind the debounce function in Lodash to the click event on the button you created previously (The number of milliseconds to delay invocation should be 500). </li>
+</ul>
+
+<p><strong>Requirements:</strong></p>
+
+<ul>
+<li>When running Webpack, your javascript should be generated in a <code>public</code> folder. You should also place your index.html in this folder.</li>
+<li>The javascript file generated by Webpack should be named <code>bundle.js</code></li>
+<li>Set Webpack config mode to production</li>
+<li>Opening your html file should not generate any error in the console</li>
+<li>Your html code should only import one Javascript script (the one generated by webpack)</li>
+</ul>
+
+<p><strong>Resources:</strong></p>
+
+<ul>
+<li><a href="/rltoken/7QYXiG5Yp93dN0WWCPMpVA" title=" Debounce documentation on Lodash " target="_blank"> Debounce documentation on Lodash </a></li>
+</ul>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_react</code></li>
+            <li>Directory: <code>Webpack</code></li>
+            <li>File: <code>task_1/js/dashboard_main.js, task_1/package.json, task_1/webpack.config.js, task_1/public/index.html</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21506" data-batch-id="569" data-toggle="modal" data-target="#task-21506-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21506-users-done-modal" data-task-id="21506" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "1. Learning how to use Webpack with a config file"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21506" data-toggle="modal" data-target="#task-test-correction-21506-correction-modal" id="task-num-1-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21506-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "1. Learning how to use Webpack with a config file"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info">Some checks are failing. Make sure you fix them before starting a new review<br><strong>You got this!</strong></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21506" data-last-request-id="11616996">Start a new test</button>
+                        <button class="btn btn-default close-modal" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error" style="display: none;"></div>
+                        <div class="info" style="display: none;"></div>
+
+
+                    </center>
+                </div>
+                <div class="result" style="display: block;"><hr><h4>Result:</h4><div class="well"><h5>Commit used:</h5><ul><li><b>URL: </b><a target="_blank" href="https://github.com/888Leonidas888/holbertonschool-web_react/tree/69926d676209c0b9ee5e39fce6113e38b4b6e002">Click here</a></li><li><b>ID: </b><code>69926d676209c0b9ee5e39fce6113e38b4b6e002</code></li><li><b>Author: </b><span>Jhony</span></li><li><b>Subject: </b><em>feat: task 1 - Learning how to use Webpack with a config file</em></li><li><b>Date: </b><span>2024-05-12 22:46:52 -0500</span></li></ul></div><div class="check-inline requirement success" id="148548" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 0</div><div class="check-inline requirement success" id="148549" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 1</div><div class="check-inline requirement success" id="148550" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 2</div><div class="check-inline requirement success" id="148551" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 3</div><div class="check-inline requirement success" id="148552" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 4</div><div class="check-inline requirement success" id="148553" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 5</div><div class="check-inline requirement success" id="148554" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 6</div><div class="check-inline requirement fail" id="148555" title="Requirement - fail"><i class="fa fa-times-circle" aria-hidden="true"></i>Check 7</div><div class="check-inline requirement fail" id="148556" title="Requirement - fail"><i class="fa fa-times-circle" aria-hidden="true"></i>Check 8</div></div>
+
+                <div class="help" style="display: block;">
+    <button data-task-id="21506">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21506">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21506-score-info-score">7</span>/9
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21507" data-position="3" id="task-num-2">
+      <div class="panel panel-default task-card " id="task-21507">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      2. Adding CSS &amp; Images
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Create a specific configuration for Webpack.</p>
+
+<ul>
+<li>Using the folder named <code>task_2</code>.</li>
+<li>Reuse the code from <code>task_1</code>.</li>
+<li>Modify the webpack config to support adding CSS to the bundle.</li>
+<li>Modify the webpack config to support adding images to the CSS.</li>
+<li>Create a folder named <code>css</code></li>
+<li>In a file named <code>main.css</code>, change the position of the counter text to be displayed on the right of the button and in bold.</li>
+<li>Add an element at the top of document with the id <code>#logo</code> which has a width of 200px and height of 200px.</li>
+<li>Set the background of th element with the image in <code>task_2/assets/holberton-logo.jpg</code>.</li>
+<li>Set the width and height of the logo background image to 200px by 200px.</li>
+<li>Make sure to configure Webpack to optimize images.</li>
+<li>When running Webpack, your javascript and html files should be generated in a <code>public</code> folder.</li>
+<li>The javascript file generated by Webpack should be named <code>bundle.js</code>.</li>
+<li>Set Webpack config mode to production.</li>
+<li>Opening your main file should not generate any error in the console.</li>
+<li>Your html code should only import one Javascript script (the one generated by webpack).</li>
+<li>When running Webpack, you should not see the warning <code>WARNING in asset size limit: The following asset(s) exceed the recommended size limit</code></li>
+</ul>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_react</code></li>
+            <li>Directory: <code>Webpack</code></li>
+            <li>File: <code>task_2/package.json, task_2/css/main.css, task_2/webpack.config.js, task_2/js/dashboard_main.js, task_2/public/index.html</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21507" data-batch-id="569" data-toggle="modal" data-target="#task-21507-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21507-users-done-modal" data-task-id="21507" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "2. Adding CSS &amp; Images"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21507" data-toggle="modal" data-target="#task-test-correction-21507-correction-modal" id="task-num-2-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21507-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "2. Adding CSS &amp; Images"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info">Some checks are failing. Make sure you fix them before starting a new review<br><strong>You got this!</strong></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21507" data-last-request-id="11617179">Start a new test</button>
+                        <button class="btn btn-default close-modal" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error" style="display: none;"></div>
+                        <div class="info" style="display: none;"></div>
+
+
+                    </center>
+                </div>
+                <div class="result" style="display: block;"><hr><h4>Result:</h4><div class="well"><h5>Commit used:</h5><ul><li><b>URL: </b><a target="_blank" href="https://github.com/888Leonidas888/holbertonschool-web_react/tree/1663715c294ece74764c8d2729660dba4863a348">Click here</a></li><li><b>ID: </b><code>1663715c294ece74764c8d2729660dba4863a348</code></li><li><b>Author: </b><span>Jhony</span></li><li><b>Subject: </b><em>chore(package.json): se actualiza.</em></li><li><b>Date: </b><span>2024-05-12 23:46:10 -0500</span></li></ul></div><div class="check-inline requirement success" id="148557" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 0</div><div class="check-inline requirement success" id="148558" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 1</div><div class="check-inline requirement success" id="148559" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 2</div><div class="check-inline requirement success" id="148560" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 3</div><div class="check-inline requirement success" id="148561" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 4</div><div class="check-inline requirement success" id="148562" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 5</div><div class="check-inline requirement success" id="148563" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 6</div><div class="check-inline code success" id="148564" title="Correct output of your code - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 7</div><div class="check-inline requirement success" id="148565" title="Requirement - success"><i class="fa fa-check-circle" aria-hidden="true"></i>Check 8</div><div class="check-inline code fail" id="148566" title="Correct output of your code - fail"><i class="fa fa-times-circle" aria-hidden="true"></i>Check 9</div></div>
+
+                <div class="help" style="display: block;">
+    <button data-task-id="21507">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21507">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21507-score-info-score">8</span>/9
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21508" data-position="4" id="task-num-3">
+      <div class="panel panel-default task-card " id="task-21508">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      3. Dev servers, modules, and tree shaking
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p>Using the folder named <code>task_3</code>. <strong>Set up a development server:</strong></p>
+
+<ul>
+<li>Reuse the code from <code>task_2</code>.</li>
+<li>Modify the Webpack config to setup a development server running on the port 8564.</li>
+<li>Modify the Webpack config to set its <code>mode</code> to <code>development</code>.</li>
+<li>Add a script in the <code>package.json</code> to start the server and open the browser with <code>npm run start-dev</code>.</li>
+</ul>
+
+<p><strong>Divide the code into modules:</strong></p>
+
+<ul>
+<li>Divide the main bundle into three modules.</li>
+<li><code>header</code> should contain a <code>header.css</code> and <code>header.js</code> files.</li>
+<li>Import jQuery, and add the logo and the H1 title to the <code>header.js</code> file (with content <code>Holberton Dashboard</code>). Add a console.log printing <code>Init header</code>.</li>
+<li>Add the needed style to the <code>header.css</code> file.</li>
+<li><code>body</code> should contain a <code>body.css</code> and <code>body.js</code> files.</li>
+<li>Import jQuery, Lodash and add the body code (button, counter) in the <code>body.js</code> file.</li>
+<li>Add the needed style to the <code>body.css</code> file.</li>
+<li><code>footer</code> should contain a <code>footer.css</code> and <code>footer.js</code> files.</li>
+<li>Import jQuery, and append a paragraph the copyright text <code>Copyright - Holberton School</code>.</li>
+<li>Add the needed style to the <code>footer.css</code> file.</li>
+<li>Modify the Webpack configuration to support three different entry points (<code>header</code>, <code>body</code>, <code>footer</code>). Each entry point should generate a filename with the following format <code>name_of_the_file.bundle.js</code>.</li>
+<li>Do NOT have a <code>task_3/public/</code> directory pushed to your repository.</li>
+<li>Add a plugin to Webpack to automatically create an <code>index.html</code> HTML file</li>
+</ul>
+
+<p><strong>Improve development speed</strong></p>
+
+<ul>
+<li>Modify the webpack config to support inline source mapping.</li>
+<li>Check that the console.log in the header.js now takes you to your javascript file instead of the main bundle.</li>
+<li>Add a plugin to Webpack to clean your build folder on each build.</li>
+</ul>
+
+<p><strong>Improve bundles size:</strong></p>
+
+<ul>
+<li>You can see that the current modules generated with <code>npm run build</code> are quite large. They all contain jQuery and/or Lodash. Modify the Webpack configuration to split the modules in chunks.</li>
+</ul>
+
+<p><strong>Requirements:</strong></p>
+
+<ul>
+<li>When running the dev server, your code should work on <code>http://localhost:8564/</code>.</li>
+<li>When running Webpack, your javascript and html files should be generated in a <code>public</code> folder.</li>
+<li>Opening your main file should not generate any error in the console.</li>
+</ul>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_react</code></li>
+            <li>Directory: <code>Webpack</code></li>
+            <li>File: <code>task_3/modules/body/body.css, task_3/modules/body/body.js, task_3/modules/footer/footer.css, task_3/modules/footer/footer.js, task_3/modules/header/header.css, task_3/modules/header/header.js, task_3/package.json, task_3/webpack.config.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21508" data-batch-id="569" data-toggle="modal" data-target="#task-21508-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21508-users-done-modal" data-task-id="21508" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "3. Dev servers, modules, and tree shaking"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21508" data-toggle="modal" data-target="#task-test-correction-21508-correction-modal" id="task-num-3-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21508-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "3. Dev servers, modules, and tree shaking"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info hidden"></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21508">Start a new test</button>
+                        <button class="btn btn-default close-modal hidden" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="info"></div>
+
+
+                    </center>
+                </div>
+                <div class="result"></div>
+
+                <div class="help">
+    <button data-task-id="21508">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21508">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21508-score-info-score">0</span>/11
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+
+
+
+          <div class="gap">
+  <div data-react-class="projects/ProjectReview" data-react-props="{&quot;correction&quot;:{&quot;statusURI&quot;:&quot;/corrections/704794/status_self_paced.json&quot;,&quot;startReviewURI&quot;:&quot;/corrections/704794/start_auto_review_self_paced.json&quot;},&quot;csrfToken&quot;:&quot;jyKs9-hmzue1oeJlFsSygpsGyfS1qTtIXqnYIJU1nxBBEjYjn_AXQ2NBlmZWUgdbFm-lfhoeEq5QJ5L42r2Utg&quot;,&quot;nextProject&quot;:{&quot;details&quot;:{&quot;curriculum_completed&quot;:false,&quot;message&quot;:&quot;Next project: React intro&quot;,&quot;uri&quot;:&quot;/projects/2354&quot;},&quot;fetchURI&quot;:&quot;/projects/2349/next&quot;},&quot;pollingInterval&quot;:10000,&quot;progress&quot;:{&quot;auto_review&quot;:{&quot;can_execute&quot;:true,&quot;completion&quot;:{&quot;count&quot;:3,&quot;is_completed&quot;:true,&quot;percentage&quot;:100.0},&quot;inability_to_execute_reason&quot;:null},&quot;tasks&quot;:[{&quot;id&quot;:21505,&quot;progress_score&quot;:{&quot;progress&quot;:1.0,&quot;score&quot;:1.0},&quot;score_info&quot;:{&quot;passed&quot;:true,&quot;points&quot;:7,&quot;score&quot;:7.0}},{&quot;id&quot;:21506,&quot;progress_score&quot;:{&quot;progress&quot;:0.7777777777777778,&quot;score&quot;:0.7777777777777778},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:9,&quot;score&quot;:7.0}},{&quot;id&quot;:21507,&quot;progress_score&quot;:{&quot;progress&quot;:0.8888888888888888,&quot;score&quot;:0.8888888888888888},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:9,&quot;score&quot;:8.0}},{&quot;id&quot;:21508,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:11,&quot;score&quot;:0}}],&quot;summary&quot;:{&quot;completion&quot;:25.0,&quot;score&quot;:{&quot;mandatory&quot;:61.11,&quot;optional&quot;:null}},&quot;can_skip&quot;:true,&quot;can_start_peer_review&quot;:false},&quot;peerReview&quot;:null,&quot;project&quot;:{&quot;completion&quot;:25.0,&quot;id&quot;:2349,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/009_color-1c484ff7ce829f9ae6ec8e19d1ad2f93a6fe01f0f2ea5142fe2125bd9ff0190b.png&quot;,&quot;name&quot;:&quot;Webpack&quot;,&quot;score&quot;:{&quot;mandatory&quot;:61.11,&quot;optional&quot;:0.0},&quot;tasksCount&quot;:0},&quot;skipURI&quot;:&quot;/corrections/704794/skip&quot;,&quot;taskLevelReviewTypeHumanized&quot;:&quot;Your score will be updated as you progress.&quot;}" data-react-cache-id="projects/ProjectReview-0"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Score</h3></div><div class="panel-body"><div class="align-items-center d-flex gap-5"><div class="pathway" style="padding: 10px 30px 40px;"><div class="project-circle " style="border-radius: 100%; box-shadow: rgb(229, 230, 230) 10px 20px 10px; height: 125px; margin: auto; padding: 5px; width: 125px;"><div data-test-id="CircularProgressbarWithChildren"><div style="position: relative; width: 100%; height: 100%;"><svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar" style="height: 115px; vertical-align: middle; width: 115px;"><path class="CircularProgressbar-trail" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 0px;"></path><path class="CircularProgressbar-path" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 228.551px;"></path></svg><div data-test-id="CircularProgressbarWithChildren__children" style="position: absolute; width: 100%; height: 100%; margin-top: -100%; display: flex; flex-direction: column; justify-content: center; align-items: center;"><div class="position-relative"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Webpack"><div class="align-items-center d-flex justify-content-center project-circle-body active" style="border-radius: 100%; height: 100px; width: 100px;"><img alt="Project badge" src="/assets/pathway/009_color-1c484ff7ce829f9ae6ec8e19d1ad2f93a6fe01f0f2ea5142fe2125bd9ff0190b.png" width="60%"></div></span><div class="p-1 position-absolute project-circle-score text-center" style="border-radius: 10px; width: 100px;"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Score of Mandatory Tasks"><span class="d-block">61.11%</span></span></div></div></div></div></div></div></div><div style="flex-basis: 100%;"><p class="mb-2 text-primary"><span>Still some tasks to work on!</span></p><p>Please review <strong>all the tasks</strong> before you start the peer review.</p><div class="d-flex flex-wrap gap-3 justify-content-between mt-4"><div class="btn-group"><button class="btn btn-primary" id="project-launch-review-btn"><i aria-hidden="true" class="fa fa-paper-plane"></i><span class="ml-2">Review all the tasks</span></button></div><div></div></div></div></div></div></div></div>
+</div>
+
+
+
+          <div class="modal fade" id="container-specs-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title">Recommended Sandboxes</h4></div><div class="modal-body"><div data-react-class="user_containers/ContainerSpecs" data-react-props="{&quot;containerModelName&quot;:&quot;Sandbox&quot;,&quot;containerSpecs&quot;:[{&quot;description&quot;:&quot;\u003cp\u003eUbuntu 18.04 with Python 3.7\u003c/p\u003e\n&quot;,&quot;id&quot;:23,&quot;name&quot;:&quot;Ubuntu 18.04 - Python 3.7&quot;,&quot;online&quot;:true,&quot;container&quot;:{&quot;container_id&quot;:&quot;4e78b7cd748b965a497e6911c6594f11d62a7436f140f9cdb845dcfacaf7cf10&quot;,&quot;id&quot;:33746,&quot;restart_uri&quot;:&quot;/user_containers/33746/restart.json&quot;,&quot;status&quot;:&quot;running&quot;,&quot;uri&quot;:&quot;/user_containers/33746.json&quot;,&quot;wake_uri&quot;:&quot;/user_containers/33746/wake.json&quot;,&quot;webterm_uri&quot;:&quot;/user_containers/33746/webterm&quot;,&quot;host&quot;:&quot;4e78b7cd748b.32cfbfa7.hbtn-cod.io&quot;,&quot;password&quot;:&quot;aad6833d3a9b1c2e02f9&quot;,&quot;ports&quot;:{&quot;8000&quot;:34887,&quot;8080&quot;:34886,&quot;22&quot;:34893,&quot;3000&quot;:34891,&quot;4000&quot;:34890,&quot;5000&quot;:34889,&quot;5001&quot;:34888,&quot;80&quot;:34892}}},{&quot;description&quot;:&quot;\u003cp\u003eUbuntu 18.04 with Node 12\u003c/p\u003e\n&quot;,&quot;id&quot;:29,&quot;name&quot;:&quot;Ubuntu 18.04 - Node 12&quot;,&quot;online&quot;:true}],&quot;containersLimit&quot;:5,&quot;csrfToken&quot;:&quot;Hrcfl6NVIaaaWa6pw6K1df8GCVjau8nz9h2fVZuL_4TQh4VD1MP4Aky52qqDNACscm9l0nUM4BX4k9WN1AP0Ig&quot;,&quot;startStatusURI&quot;:&quot;/user_containers/start_status.json&quot;,&quot;startURI&quot;:&quot;/user_containers/start.json&quot;}" data-react-cache-id="user_containers/ContainerSpecs-0"><div><div class="d-flex gap-4 sandboxes-filters"><a class="btn btn-outline-primary"><i aria-hidden="true" class="fa fa-filter"></i><span class="ml-2">Running only</span></a><div class="align-items-center d-flex" style="position: relative; width: 100%;"><input class="form-control" placeholder="Search for an image ..." type="search" value=""></div></div><div class="mt-3"><h3>2 images<small class="ml-2">(1/5 Sandboxes spawned)</small></h3></div><div class="mt-3"><div class="panel panel-default"><div class="panel-body border-left-success" style="border-left: 6px solid;"><div class="align-items-center d-flex flex-wrap justify-content-between"><div><h3 class="mt-0"><i aria-hidden="true" class="fa fa-terminal text-success"></i><span class="ml-2">Ubuntu 18.04 - Python 3.7</span></h3><div class="mt-2 text-muted"><p>Ubuntu 18.04 with Python 3.7</p>
+</div></div><div class="d-flex flex-wrap gap-5"><div class="align-items-center d-flex gap-3"><div><span data-container="body" data-html="false" data-placement="top" data-toggle="tooltip" title="" data-original-title="Copy SSH command"><span role="button"><button class="btn btn-default">SSH</button></span></span></div><div><span data-container="body" data-html="false" data-placement="top" data-toggle="tooltip" title="" data-original-title="Copy SFTP command"><span role="button"><button class="btn btn-default">SFTP</button></span></span></div><a class="btn btn-webterm" href="/user_containers/33746/webterm" rel="noreferrer" target="_blank"><i aria-hidden="true" class="fa fa-terminal"></i><span class="ml-2">Webterm</span></a></div><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Restart your Sandbox"><a class="btn btn-warning "><i aria-hidden="true" class="fa fa-power-off"></i><span class="ml-2">Restart</span></a></span><a class="btn btn-danger"><i aria-hidden="true" class="fa fa-trash"></i><span class="ml-2">Destroy</span></a></div></div><div class="d-flex flex-wrap gap-5 mt-3"><div class="p-4" style="flex-shrink: 0;"><div class="d-flex flex-column gap-3"><h4 class="mt-0"><i aria-hidden="true" class="fa fa-user text-info"></i><span class="ml-2">Credentials</span></h4><div class="d-flex gap-2"><strong>Host</strong><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Click to copy"><span role="button"><small>4e78b7cd748b.32cfbfa7.hbtn-cod.io</small></span></span></div><div class="d-flex gap-2"><strong>Username</strong><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Click to copy"><span role="button"><small>4e78b7cd748b</small></span></span></div><div class="d-flex gap-2"><strong>Password</strong><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Click to copy"><span role="button"><small>aad6833d3a9b1c2e02f9</small></span></span></div></div></div><div class="p-4" style="flex: 1 1 40%;"><div class="d-flex flex-column gap-3"><h4 class="mt-0"><i aria-hidden="true" class="fa fa-globe text-info"></i><span class="ml-2">Web access</span></h4><div class="align-items-center d-flex flex-wrap gap-2"><a class="btn btn-outline-primary" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io" rel="noreferrer" target="_blank">HTTP</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:3000" rel="noreferrer" target="_blank">3000</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:4000" rel="noreferrer" target="_blank">4000</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:5000" rel="noreferrer" target="_blank">5000</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:5001" rel="noreferrer" target="_blank">5001</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:8000" rel="noreferrer" target="_blank">8000</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:8080" rel="noreferrer" target="_blank">8080</a></div></div></div><div class="p-4" style="flex: 1 1 35%;"><div class="d-flex flex-column gap-3"><h4 class="mt-0"><i aria-hidden="true" class="fa fa-map-signs text-info"></i><span class="ml-2">Port mapping</span></h4><div class="align-items-center d-flex flex-wrap"><div class="align-items-center text-primary d-flex gap-2" style="padding: 5px 10px;"><strong>SSH</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34893</span></div><div class="align-items-center text-primary d-flex gap-2" style="padding: 5px 10px;"><strong>HTTP</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34892</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>3000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34891</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>4000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34890</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>5000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34889</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>5001</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34888</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>8000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34887</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>8080</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34886</span></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-body"><div class="align-items-center d-flex flex-wrap justify-content-between"><div><h3 class="mt-0"><i aria-hidden="true" class="fa fa-terminal text-danger"></i><span class="ml-2">Ubuntu 18.04 - Node 12</span></h3><div class="mt-2 text-muted"><p>Ubuntu 18.04 with Node 12</p>
+</div></div><div class="d-flex flex-wrap gap-5"><a class="btn btn-success"><i aria-hidden="true" class="fa fa-play"></i><span class="ml-2">Run</span></a></div></div></div></div></div></div></div></div></div></div></div>
+          <div class="modal fade" id="sandboxes-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title">Recommended Sandboxes</h4></div><div class="modal-body"><div data-react-class="user_sandboxes/Sandboxes" data-react-props="{&quot;images&quot;:[{&quot;id&quot;:16,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;US East (N. Virginia)\t&quot;},{&quot;id&quot;:50,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;US East (N. Virginia)\t&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;South America (São Paulo)&quot;},{&quot;id&quot;:51,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;South America (São Paulo)&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;Europe (Paris)&quot;},{&quot;id&quot;:52,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;Europe (Paris)&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;Asia Pacific (Sydney)&quot;},{&quot;id&quot;:53,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;Asia Pacific (Sydney)&quot;}],&quot;sandboxesUri&quot;:&quot;/user_sandboxes&quot;,&quot;csrfToken&quot;:&quot;XLG9b7O0NaBgfAs66iRovNpKpNCGMWlqXw_rZo56ih-SgSe7xCLsBLacfzmqst1lVyPIWimGQIxRgaG-wfKBuQ&quot;,&quot;maxNumberOfContainers&quot;:2}" data-react-cache-id="user_sandboxes/Sandboxes-0"><div class="d-flex flex-column"><div class="dropdown pull-right" style="align-self: end;"><button aria-expanded="false" aria-haspopup="true" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" type="button">New sandbox <span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-right"><li class="divider" role="separator"></li><li class="dropdown-header">US East (N. Virginia)	</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">South America (São Paulo)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">Europe (Paris)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">Asia Pacific (Sydney)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li></ul></div><div class="mt-2 alert alert-info">No sandboxes yet!</div></div></div></div></div></div></div>
+
+      <div class="d-flex justify-content-around align-items-center">
+          <div>
+            <a data-toggle="tooltip" title="" class="btn btn-primary" role="button" href="/projects/2352" data-original-title="Typescript">Previous project</a>
+          </div>
+          <form action="/corrections/704794/skip" method="post">
+            <input name="authenticity_token" type="hidden" value="_bVMpJ2IzvC0cCu3lVEllNwd7EWnJsuHhhc3ieT4Y78zhdZw6h4XVGKQX7TVx5BNUXSAzwiR4mGImX1Rq3BoGQ">
+            <button class="btn btn-warning" type="submit">
+              Next project
+            </button>
+          </form>
+      </div>
+  
+            </div>
+          </body>
+        </html>
+      
