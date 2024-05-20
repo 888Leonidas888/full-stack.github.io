@@ -49,6 +49,9 @@ h2 {
   margin-right: 10px;
 }
 
+.panel-body img{
+  width: 90%;
+}
 #project-description a {
   color: #e0003c;
   text-decoration: none;
