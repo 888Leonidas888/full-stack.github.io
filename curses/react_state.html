@@ -1,0 +1,952 @@
+
+        <!DOCTYPE html>
+        <html lang="es">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>react_state</title>
+            <link rel="stylesheet" href="../css/main.css" />
+          </head>
+          <body>
+            <div class="container-main">
+              
+
+      <div class="sm-gap">
+    <div data-react-class="projects/ProjectHeader" data-react-props="{&quot;metadata&quot;:{&quot;level&quot;:&quot;Amateur&quot;,&quot;author&quot;:&quot;Johann Kerbrat, Engineering Manager at Uber Works&quot;,&quot;weight&quot;:1,&quot;migrated_to_sasheck&quot;:false,&quot;correction&quot;:{&quot;released&quot;:true,&quot;requires_manual_correction&quot;:true},&quot;task_level_review_type&quot;:&quot;Your score will be updated as you progress.&quot;},&quot;project&quot;:{&quot;completion&quot;:0.0,&quot;id&quot;:2365,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/005_color-7e093441390199aa2cdc4b6f6478f1def43125d09c333d9ba21227c9a56cbc0d.png&quot;,&quot;name&quot;:&quot;React state&quot;,&quot;score&quot;:{&quot;mandatory&quot;:0.0,&quot;optional&quot;:null},&quot;tasksCount&quot;:0},&quot;slackLink&quot;:null,&quot;tags&quot;:[],&quot;videoRoomLink&quot;:null}" data-react-cache-id="projects/ProjectHeader-0"><div class="panel panel-tile project-header"><div class="panel-body" style="align-items: center; display: flex;"><div class="pathway" style="padding: 16px;"><div class="project-circle project-circle-on-tile" style="border-radius: 100%; height: 150px; margin: auto; padding: 5px; width: 150px;"><div data-test-id="CircularProgressbarWithChildren"><div style="position: relative; width: 100%; height: 100%;"><svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar" style="height: 140px; vertical-align: middle; width: 140px;"><path class="CircularProgressbar-trail" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 0px;"></path><path class="CircularProgressbar-path" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 304.734px;"></path></svg><div data-test-id="CircularProgressbarWithChildren__children" style="position: absolute; width: 100%; height: 100%; margin-top: -100%; display: flex; flex-direction: column; justify-content: center; align-items: center;"><div class="position-relative"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="React state"><div class="align-items-center d-flex justify-content-center project-circle-body active" style="border-radius: 100%; height: 124px; width: 124px;"><img alt="Project badge" src="/assets/pathway/005_color-7e093441390199aa2cdc4b6f6478f1def43125d09c333d9ba21227c9a56cbc0d.png" width="60%"></div></span><div class="p-1 position-absolute project-circle-score text-center" style="border-radius: 10px; width: 125px;"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Score of Mandatory Tasks"><span class="d-block">0%</span></span></div></div></div></div></div></div></div><div class="project-info" style="flex-basis: 100%; margin: 16px;"><h1 style="margin: 0px;">React state</h1><ul class="list-group metadata" id="project-metadata"><li class="list-group-item"><i aria-hidden="true" class="fa fa-level-up fa-fw"></i> Amateur</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-user fa-fw"></i> By: Johann Kerbrat, Engineering Manager at Uber Works</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-cog fa-fw"></i> Weight: 1</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-rocket fa-fw"></i> Migrated to checker v2: <i aria-hidden="true" class="fa fa-times fa-fw"></i></li><li class="list-group-item"><i aria-hidden="true" class="fa fa-check-square fa-fw"></i> Your score will be updated as you progress.</li><li class="list-group-item"><i aria-hidden="true" class="fa fa-check-square fa-fw"></i> <strong>Manual QA review must be done</strong> (request it when you are done with the project)</li></ul></div></div></div></div>
+  </div>
+
+
+
+    <div id="project_id" style="display: none" data-project-id="2365"></div>
+
+
+
+      
+
+      
+
+      <div class="panel panel-default" id="project-description">
+  <div class="panel-body">
+    <p><img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2019/12/f316c008fc6a791bf403.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20240628%2Feu-west-3%2Fs3%2Faws4_request&amp;X-Amz-Date=20240628T024520Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a367247e3f5969ffcc8f353e6f387e45f4b1b4988e6438bca87ad12d0bbdcacb" alt="" loading="lazy" style=""></p>
+
+<h2>Resources</h2>
+
+<p><strong>Read or watch</strong>:</p>
+
+<ul>
+<li><a href="/rltoken/JnDgT9wkZm7lYiVR2FCpuQ" title="State and lifecycle" target="_blank">State and lifecycle</a></li>
+<li><a href="/rltoken/_9IOkAcTDr5f-XYW6dl3Ig" title="SetState and State callback" target="_blank">SetState and State callback</a></li>
+<li><a href="/rltoken/S2hD9Bue9ClBYjzam8yKaw" title="Context" target="_blank">Context</a></li>
+<li><a href="/rltoken/rricR8LoBSc_-SiA-3Nk1g" title="Forms and Controlled components" target="_blank">Forms and Controlled components</a></li>
+<li><a href="/rltoken/g79PhwRLRgs7FyIDU1uRwA" title="Lifting State Up" target="_blank">Lifting State Up</a></li>
+<li><a href="/rltoken/FIfDdYRvkwDCmWfM2X4ucQ" title="React Hooks" target="_blank">React Hooks</a></li>
+<li><a href="/rltoken/L04xQlTVPblGXxDwoXYHTg" title="Enzyme State" target="_blank">Enzyme State</a></li>
+<li><a href="/rltoken/JXl9u-eQS7xg2iihtq5GQw" title="Enzyme SetState" target="_blank">Enzyme SetState</a></li>
+<li><a href="/rltoken/lyVtdS-ImsPIneHMYCkxow" title="Enzyme Instance" target="_blank">Enzyme Instance</a></li>
+<li><a href="/rltoken/MJ2Ka7ga2oVoRK3EY3B2gQ" title="Enzyme Simulate" target="_blank">Enzyme Simulate</a></li>
+</ul>
+
+<h2>Learning Objectives</h2>
+
+<p>At the end of this project, you are expected to be able to <a href="/rltoken/HopRXDXhGy_1smrX7kHZog" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
+
+<ul>
+<li>What the state of a component or a container is</li>
+<li>The lifecycle of a component</li>
+<li>How to modify a state and execute code in the right order</li>
+<li>What a controlled component is</li>
+<li>How to use Forms in React</li>
+<li>How to reuse smaller components, keep them pure, and lift its state to principal containers</li>
+<li>The use of a React Hook and how to create one</li>
+<li>How to test State changes with Enzyme</li>
+</ul>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>All your files will be interpreted/compiled on Ubuntu 18.04 LTS using <code>node 12.x.x</code> and <code>npm 6.x.x</code></li>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code>, <code>Visual Studio Code</code></li>
+<li>All your files should end with a new line</li>
+<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
+</ul>
+
+  </div>
+</div>
+
+
+      
+
+      
+
+        
+          <h2 class="gap">Tasks</h2>
+
+    <div data-role="task21665" data-position="1" id="task-num-0">
+      <div class="panel panel-default task-card " id="task-21665">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      0. Adding a local state for notifications
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+      <div class="task_progress_score_bar" data-task-id="21665" data-correction-id="704874">
+        <div class="task_progress_bar" style="width: 0%;">
+          <div class="task_score_bar">
+          </div>
+        </div>
+        <div class="task_progress_score_text">
+          Score: <span class="task_score_value">0.00%</span> (<span class="task_progress_value">Checks completed: 0.00%</span>)
+        </div>
+      </div>
+
+    <!-- Task Body -->
+    <p>Using the previous project (<code>React inline styling</code>), we have modularized our React application without worrying about interactions and state, which is usually a recommended process of development. Now, our application is in a good place to start adding logic and state.</p>
+
+<p><strong>Modify the App component in <code>task_0/dashboard/src/App.App.js</code>:</strong></p>
+
+<p>Create a local state to store a <code>displayDrawer</code> element:</p>
+
+<ul>
+<li>Define the default state for the state in the <code>constructor</code> of the Class</li>
+<li>Create a function named <code>handleDisplayDrawer</code> that will change the value of <code>displayDrawer</code> to <code>true</code></li>
+<li>Create a function named <code>handleHideDrawer</code> that will change the value of <code>displayDrawer</code> to <code>false</code></li>
+</ul>
+
+<p><strong>Modify the <code>Notifications</code> import in <code>task_0/dashboard/src/App/App.js</code>:</strong></p>
+
+<ul>
+<li>Pass to the component the prop <code>displayDrawer</code> using the local state</li>
+<li>Pass the new functions <code>handleDisplayDrawer</code> and <code>handleHideDrawer</code></li>
+</ul>
+
+<p><strong>Modify the App test suite in <code>task_0/dashboard/src/App/App.test.js</code>:</strong></p>
+
+<ul>
+<li>Add a test to verify that the default state for <code>displayDrawer</code> is <code>false</code>. Verify that after calling <code>handleDisplayDrawer</code>, the state should now be <code>true</code></li>
+<li>Add a test to verify that after calling <code>handleHideDrawer</code>, the state is updated to be <code>false</code></li>
+</ul>
+
+<p><strong>Modify the Notifications component in <code>task_0/dashboard/src/Notifications/Notifications.js</code>:</strong></p>
+
+<ul>
+<li>Define the <code>propTypes</code> and the <code>defaultProps</code> for the new props</li>
+<li>When clicking on <code>Your notifications</code>, call <code>handleDisplayDrawer</code></li>
+<li>When clicking on the close button, call <code>handleHideDrawer</code></li>
+</ul>
+
+<p>At this point, after reloading the app, you should be able to show / hide the notifications panel</p>
+
+<p><strong>Modify the Notifications test suite in <code>task_0/dashboard/src/Notifications/Notifications.test.js</code>:</strong></p>
+
+<ul>
+<li>Add a test to verify that clicking on the menu item calls <code>handleDisplayDrawer</code></li>
+<li>Add a test to verify that clicking on the button calls <code>handleHideDrawer</code></li>
+</ul>
+
+<p><strong>Tips:</strong></p>
+
+<ul>
+<li>Remember that you implemented <code>shouldComponentUpdate</code>. You will need to modify the logic to allow the component to rerender when the prop <code>displayDrawer</code> changes</li>
+<li>Use <code>setState</code> and <code>instance</code> when creating tests with Enzyme</li>
+<li>Remember to use spies to verify if a function is being called. You can pass a spy as a property</li>
+</ul>
+
+<p><strong>Requirements:</strong></p>
+
+<ul>
+<li>Do not forget to bind the functions you are passing to the children to improve performances</li>
+<li>When running, there should not be any lint error in the console</li>
+</ul>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_react</code></li>
+            <li>Directory: <code>react_state</code></li>
+            <li>File: <code>task_0/dashboard/src/App/App.js, task_0/dashboard/src/App/App.test.js, task_0/dashboard/src/Notifications/Notifications.js, task_0/dashboard/src/Notifications/Notifications.test.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21665" data-batch-id="569" data-toggle="modal" data-target="#task-21665-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21665-users-done-modal" data-task-id="21665" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "0. Adding a local state for notifications"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      <button class="btn btn-default btn-sm" data-task-id="21665" data-toggle="modal" data-target="#task-test-correction-21665-correction-modal" id="task-num-0-check-code-btn">
+          Review your work
+      </button>
+      <div class="modal fade task_correction_modal student_modal" id="task-test-correction-21665-correction-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Correction of "0. Adding a local state for notifications"</h4>
+            </div>
+            <div class="modal-body">
+                <div class="actions">
+                    <center>
+                        <div class="alert alert-info">Some checks are failing. Make sure you fix them before starting a new review<br><strong>You got this!</strong></div>
+
+                        <button name="button" type="submit" class="btn btn-primary correction_request_test_send" data-task-id="21665" data-last-request-id="11905343">Start a new test</button>
+                        <button class="btn btn-default close-modal" data-dismiss="modal" type="button">Close</button>
+
+                        <div class="spinner" style="display: none;">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                        <div class="error" style="display: none;"></div>
+                        <div class="info" style="display: none;"></div>
+
+
+                    </center>
+                </div>
+                <div class="result" style="display: block;"><hr><h4>Result:</h4><div class="well"><h5>Commit used:</h5><ul><li><b>URL: </b><a target="_blank" href="https://github.com/888Leonidas888/holbertonschool-web_react/tree/88b096e21b6b94670623ccd3a4fd1b8b719a668f">Click here</a></li><li><b>ID: </b><code>88b096e21b6b94670623ccd3a4fd1b8b719a668f</code></li><li><b>Author: </b><span>Jhony</span></li><li><b>Subject: </b><em>docs: se agrega readme.</em></li><li><b>Date: </b><span>2024-06-25 19:53:09 -0500</span></li></ul></div><div class="check-inline requirement fail" id="149539" title="Requirement - fail"><i class="fa fa-times-circle" aria-hidden="true"></i>Check 0</div><div class="check-inline requirement fail offline" id="149540" title="Skipped - previous check failed - Requirement - fail"><i class="fa fa-times-circle" aria-hidden="true"></i>Check 1</div><div class="check-inline code fail offline" id="149545" title="Skipped - previous check failed - Correct output of your code - fail"><i class="fa fa-times-circle" aria-hidden="true"></i>Check 2</div><div class="check-inline code fail offline" id="149543" title="Skipped - previous check failed - Correct output of your code - fail"><i class="fa fa-times-circle" aria-hidden="true"></i>Check 3</div><div class="check-inline code fail offline" id="149542" title="Skipped - previous check failed - Correct output of your code - fail"><i class="fa fa-times-circle" aria-hidden="true"></i>Check 4</div><div class="check-inline code fail offline" id="149544" title="Skipped - previous check failed - Correct output of your code - fail"><i class="fa fa-times-circle" aria-hidden="true"></i>Check 5</div></div>
+
+                <div class="help" style="display: block;">
+    <button data-task-id="21665">
+        <i aria-hidden="true" class="fa fa-info-circle "></i>
+    </button>
+    <div class="help-container" data-task-id="21665">
+        <div class="check-line">
+            <div class="check-inline requirement success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Requirement success
+            </div>
+            <div class="check-inline requirement fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Requirement fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline code success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Code success
+            </div>
+            <div class="check-inline code fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Code fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline efficiency success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Efficiency success
+            </div>
+            <div class="check-inline efficiency fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Efficiency fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline answer success">
+                  <i aria-hidden="true" class="fa fa-check-circle "></i>
+                Text answer success
+            </div>
+            <div class="check-inline answer fail">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Text answer fail
+            </div>
+        </div>
+        <div class="check-line">
+            <div class="check-inline requirement fail offline">
+                  <i aria-hidden="true" class="fa fa-times-circle "></i>
+                Skipped - Previous check failed
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+
+    <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#sandboxes-modal"><i aria-hidden="true" class="fa fa-terminal "></i><span>Get a sandbox</span></button>
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21665-score-info-score">0</span>/4
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21666" data-position="2" id="task-num-1">
+      <div class="panel panel-default task-card " id="task-21666">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      1. Controlled components and state callback
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p><strong>create a form within the Login component &amp; handle login submit in <code>task_1/dashboard/src/Login/Login.js</code>:</strong></p>
+
+<ul>
+<li>Create a local state with the value <code>isLoggedIn</code> set to <code>false</code></li>
+<li>Wrap the inputs within a <code>form</code> element</li>
+<li>Replace the button by an <code>input</code> element with type <code>submit</code></li>
+<li>Create a function named <code>handleLoginSubmit</code> that will update the local state by setting <code>isLoggedIn</code> to <code>true</code></li>
+<li>When the form is submitted call the newly created login submission handling function</li>
+</ul>
+
+<p><strong>create controlled components in the <code>Login</code> component in<code>task_1/dashboard/src/Login/Login.js</code></strong></p>
+
+<ul>
+<li>Modify the local state to add two new values <code>email</code> and <code>password</code>. By default these values are empty but not <code>null</code></li>
+<li>Modify the two inputs elements in the form and set their values to use the local state</li>
+<li>Create two function <code>handleChangeEmail</code> and <code>handleChangePassword</code> that the two inputs will call when the value in the input field is changed. The local state should update with what the user is typing</li>
+</ul>
+
+<p><strong>modify state callback in <code>task_1/dashboard/src/Login/Login.js</code></strong></p>
+
+<ul>
+<li>Modify the local state to add one value <code>enableSubmit</code>. It should be set to <code>false</code> by default</li>
+<li>Modify the Submit button to only be enabled when the <code>enableSubmit</code> value of the local state is <code>true</code></li>
+<li>Every time the user changes the value of the <code>email</code> or <code>password</code> field, verify that both fields are not empty. If they are not empty, you can enable the submit button</li>
+</ul>
+
+<p><strong>add tests in the <code>task_1/dashboard/src/Login/Login.js</code> suite</strong></p>
+
+<ul>
+<li>Add a test to verify that the submit button is disabled by default</li>
+<li>Add a test to verify that after changing the value of the two inputs, the button is enabled</li>
+</ul>
+
+<p><strong>Tips:</strong></p>
+
+<ul>
+<li>To simulate an input change, you can use the <code>simulate</code> method and use the <code>change</code> event</li>
+</ul>
+
+<p><strong>Requirements:</strong></p>
+
+<ul>
+<li>The state should have all the default values set in the <code>constructor</code></li>
+<li>Do not forget to bind the functions you are passing to the children to improve performances</li>
+<li>When submitting the form, the page should not reload</li>
+<li>Make sure that the button is always enabled when the two inputs are not empty. And make sure that the button is always disabled when one of the input’s value is empty</li>
+<li>When running, there should not be any lint error in the console</li>
+</ul>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_react</code></li>
+            <li>Directory: <code>react_state</code></li>
+            <li>File: <code>task_1/dashboard/src/Login/Login.js, task_1/dashboard/src/Login/Login.test.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21666" data-batch-id="569" data-toggle="modal" data-target="#task-21666-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21666-users-done-modal" data-task-id="21666" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "1. Controlled components and state callback"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21666-score-info-score">0</span>/15
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21667" data-position="3" id="task-num-2">
+      <div class="panel panel-default task-card " id="task-21667">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      2. Context
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p><strong>Create a simple React Context in <code>task_2/dashboard/src/App/AppContext.js</code></strong></p>
+
+<ul>
+<li>Define a default user object, containing <code>email</code>, <code>password</code>, and <code>isLoggedIn</code></li>
+<li>Define a default <code>logOut</code> function</li>
+<li>Create a React context containing a <code>user</code> object and a <code>logOut</code> function. Set both default values using the previously created elements</li>
+</ul>
+
+<p><strong>Create the local state for the App in <code>task_2/dashboard/src/App/App.js</code></strong></p>
+
+<ul>
+<li>Modify the local state of the App container by adding a <code>user</code> object and <code>logOut</code> function. Set the default (or empty) values using the ones you previously created for the context</li>
+</ul>
+
+<p><strong>Create the login and logout functions in the <code>App</code> container in <code>task_2/dashboard/src/App/App.js</code> and use them</strong></p>
+
+<ul>
+<li>Create a <code>logIn</code> function that takes as argument <code>email</code> and <code>password</code>. When the function is called, update the user object in the local state. Set the <code>email</code> and <code>password</code>. Set the <code>isLoggedIn</code> value to <code>true</code></li>
+<li>Modify the <code>logOut</code> function to reset the value of the <code>user</code> object in the local state</li>
+<li>Remove the two props <code>isLoggedIn</code> and <code>logOut</code> from the App, they will now be used through the state</li>
+<li>Refactor the render method to use the objects from the state to display the <code>CourseList</code> or the <code>Login</code> components</li>
+<li>Pass the new <code>logIn</code> function to the <code>Login</code> component</li>
+</ul>
+
+<p><strong>in <code>task_2/dashboard/src/Login/Login.js</code></strong></p>
+
+<ul>
+<li>Remove from the state the <code>isLoggedIn</code> property, since we don’t use it anymore</li>
+<li>Modify the <code>handleLoginSubmit</code> to call the newly created <code>logIn</code> function</li>
+</ul>
+
+<p><strong>Checkpoint</strong></p>
+
+<p>Take a moment to test your application. At this point, you should be able to login inside the app:</p>
+
+<ul>
+<li>Enter a few letters to the email and the password inputs, and click on the submit button. You should see the list of courses and the login component should be unmounted.</li>
+<li>Verify that the Notifications panel is still working correctly. You should be able to show/hide the panel by clicking on the top right link and the close button.</li>
+</ul>
+
+<p><strong>Setting the context in <code>task_2/dashboard/src/App/App.js</code>:</strong></p>
+
+<ul>
+<li>In the <code>App</code> container, wrap the entire app with the <code>AppContext</code> created earlier using the <code>provider</code> element. Set the value to the <code>user</code> and <code>logOut</code> function using the local state</li>
+</ul>
+
+<p><strong>Modify the <code>Header</code> component in <code>task_2/dashboard/src/Header/Header.js</code>:</strong></p>
+
+<ul>
+<li>Modify the <code>Header</code> to inherit the context using the <code>ContextType</code> API</li>
+<li>Add a new line under the header, that is only displayed when the value <code>isLoggedIn</code> in the <code>user</code> object within the context is <code>true</code>
+
+<ul>
+<li>This section should display “Welcome <strong>email</strong> (<em>logout</em>)”</li>
+<li>Add the id <code>logoutSection</code> to the section</li>
+<li>Clicking on the <code>logout</code> link, should call the <code>logOut</code> function included within the context</li>
+</ul></li>
+</ul>
+
+<p>At this point, you should be able to login (remove Login component and show CourseList component) and logout within the map (remove CourseList component, show Login component, show new header section)</p>
+
+<p><strong>Create the tests!</strong></p>
+
+<p><strong>in <code>task_2/dashboard/src/Header/Header.test.js</code></strong></p>
+
+<ul>
+<li>Make sure the current tests pass correctly</li>
+<li>Add a test that mounts the <code>Header</code> component with a default context value. Verify that the <code>logoutSection</code> is not created</li>
+<li>Add a test that mounts the <code>Header</code> component with a user defined (<code>isLoggedIn</code> is <code>true</code> and an email is set). Verify that the <code>logoutSection</code> is  created</li>
+<li>Add a test that mounts the <code>Header</code> component with a user defined (<code>isLoggedIn</code> is <code>true</code> and an email is set) and the <code>logOut</code> is linked to a spy. Verify that clicking on the link is calling the spy</li>
+</ul>
+
+<p><strong>in <code>task_2/dashboard/src/App/App.test.js</code></strong></p>
+
+<ul>
+<li>Refactor the previous tests to not use props but state instead</li>
+<li>Refactor the test checking if <code>logOut</code> is being called by verifying if the state is updated correctly instead</li>
+<li>Create a test to verify that the <code>logIn</code> function updates the state correctly</li>
+<li>Create a test to verify that the <code>logOut</code> function updates the state correctly</li>
+</ul>
+
+<p><strong>Tips:</strong></p>
+
+<ul>
+<li>Remember that function components can not use the context, you might need to convert the <code>Header</code> function component to a Class</li>
+<li>Unfortunately, Enzyme does not fully support the newly created Static Context API of React. Therefore do not use the <code>setContext</code> API of Enzyme since it is not compatible. Instead wrap the component using the <code>Context.Provider</code> to pass different context values</li>
+</ul>
+
+<p><strong>Requirements:</strong></p>
+
+<ul>
+<li>Be careful that Context is using reference identity to determine when to re-render. Don’t create directly an object within the Provider value</li>
+<li>Don’t forget to export elements that are going to be reused through the app (e.g default user)</li>
+<li>Don’t forget to clean unused state and props after refactoring</li>
+<li>Don’t forget to set the <code>propTypes</code> and <code>defaultProps</code> for any new prop</li>
+</ul>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_react</code></li>
+            <li>Directory: <code>react_state</code></li>
+            <li>File: <code>task_2/dashboard/src/App/AppContext.js, task_2/dashboard/src/App/App.js, task_2/dashboard/src/Login/Login.js, task_2/dashboard/src/Header/Header.js, task_2/dashboard/src/Header/Header.test.js, task_2/dashboard/src/App/App.test.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21667" data-batch-id="569" data-toggle="modal" data-target="#task-21667-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21667-users-done-modal" data-task-id="21667" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "2. Context"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21667-score-info-score">0</span>/23
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21668" data-position="4" id="task-num-3">
+      <div class="panel panel-default task-card " id="task-21668">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      3. Context consumer &amp; advanced state
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p><strong>Context consumer: modify the Footer component in <code>task_3/dashboard/src/Footer/Footer.js</code></strong></p>
+
+<ul>
+<li>Without making the component a Class, make the component subscribe to the context changes</li>
+<li>When the user is logged in, display a new paragraph containing a link with the text <code>Contact us</code></li>
+</ul>
+
+<p><strong>Modify the test suite in <code>task_3/dashboard/src/Footer/Footer.test.js</code>:</strong></p>
+
+<ul>
+<li>Refactor the test to make them work correctly with the changes</li>
+<li>Add a test to verify that the link is not displayed when the user is logged out within the context</li>
+<li>Add a test to verify that the link is displayed when the user is logged in within the context</li>
+</ul>
+
+<p><strong>Advanced state: modify the <code>App</code> container in <code>task_3/dashboard/src/App/App.js</code>:</strong></p>
+
+<ul>
+<li>Set the <code>listNotifications</code> within the state</li>
+<li>Create a function <code>markNotificationAsRead</code>. It accepts an <code>id</code> (number) in argument. When the function is called, it remove the notification with that id from the list of notifications within the state</li>
+<li>Pass the list of notifications to the <code>Notifications</code> component using the state</li>
+<li>Pass the newly created function to the <code>Notifications</code> component</li>
+</ul>
+
+<p><strong>Modify the test suite in <code>task_3/dashboard/src/App/App.test.js</code>:</strong></p>
+
+<ul>
+<li>Add a test to verify that <code>markNotificationAsRead</code> works as intended. You can for example set the state with a mock list of notifications, then call the function and verify that the state of the container has been updated correctly</li>
+</ul>
+
+<p><strong>Modify the <code>Notifications</code> container in <code>task_3/dashboard/src/Notifications/Notifications.js</code>:</strong></p>
+
+<ul>
+<li>Refactor the code to delete the function <code>markAsRead</code>, we can now use the real one</li>
+<li>Refactor the code to delete the <code>shouldComponentUpdate</code>, the component is only using prop and state, and you should be able to optimize the performance with <code>PureComponent</code></li>
+<li>Use the newly created function <code>markNotificationAsRead</code> to mark a notification as read</li>
+<li>Define the prop type and the default for <code>markNotificationAsRead</code></li>
+</ul>
+
+<p><strong>Modify the test suite in <code>task_3/dashboard/src/Notifications/Notifications.test.js</code>:</strong></p>
+
+<ul>
+<li>Refactor the tests to match the new container</li>
+</ul>
+
+<p><strong>Checkpoint</strong></p>
+
+<p>Take a moment to test your application. At this point:</p>
+
+<ul>
+<li>When you log in, you should be able to see a new footer</li>
+<li>When you display the panel of notifications, you should each of them disappear on click</li>
+</ul>
+
+<p><strong>Tips:</strong></p>
+
+<ul>
+<li>If you end up having to reuse mock data a lot, feel free to export and import the same mockup from the same file</li>
+</ul>
+
+<p><strong>Requirements:</strong></p>
+
+<ul>
+<li>Don’t forget to clean unused state and props after refactoring</li>
+<li>Don’t forget to set the <code>propTypes</code> and <code>defaultProps</code> for any new prop</li>
+</ul>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_react</code></li>
+            <li>Directory: <code>react_state</code></li>
+            <li>File: <code>task_3/dashboard/src/Footer/Footer.js, task_3/dashboard/src/Footer/Footer.test.js, task_3/dashboard/src/App/App.js, task_3/dashboard/src/App/App.test.js, task_3/dashboard/src/Notifications/Notifications.test.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21668" data-batch-id="569" data-toggle="modal" data-target="#task-21668-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21668-users-done-modal" data-task-id="21668" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "3. Context consumer &amp; advanced state"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21668-score-info-score">0</span>/14
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+    <div data-role="task21669" data-position="5" id="task-num-4">
+      <div class="panel panel-default task-card " id="task-21669">
+  <span id="user_id" data-id="7068"></span>
+
+  <div class="panel-heading panel-heading-actions">
+    <h3 class="panel-title">
+      4. Introduction to react hook
+    </h3>
+
+    <div>
+        <span class="label label-info">
+          mandatory
+        </span>
+    </div>
+  </div>
+
+  <div class="panel-body">
+    <span id="user_id" data-id="7068"></span>
+
+    <!-- Progress vs Score -->
+
+    <!-- Task Body -->
+    <p><strong>Using React Hooks, modify the <code>CourseListRow</code> component in <code>task_4/dashboard/src/CourseList/CourseListRow.js</code>:</strong></p>
+
+<ul>
+<li>Add a new style named <code>rowChecked</code> with the background color <code>#e6e4e4</code></li>
+<li>When the row is a simple row, add a checkbox within the first cell</li>
+<li>When the user checks the box, the styling of the row should use <code>rowChecked</code></li>
+</ul>
+
+<p><strong>Tips &amp; Requirements:</strong></p>
+
+<ul>
+<li>Make sure that the checkbox of each row is correctly checked or unchecked after the user interaction</li>
+<li>React Hooks are new in React and the number of resources can be limited. Refer to the official documentation of React. The exercise is simple enough that should not need anything else</li>
+<li>Do not modify the component to a Class. You need to use the React Hook</li>
+</ul>
+
+  </div>
+
+  <div class="list-group">
+    <!-- Task URLs -->
+
+    <!-- Technical information -->
+      <div class="list-group-item">
+        <p><strong>Repo:</strong></p>
+        <ul>
+          <li>GitHub repository: <code>holbertonschool-web_react</code></li>
+            <li>Directory: <code>react_state</code></li>
+            <li>File: <code>task_4/dashboard/src/CourseList/CourseListRow.js</code></li>
+        </ul>
+      </div>
+
+    <!-- Self-paced manual review -->
+  </div>
+
+  <!-- Panel footer - Controls -->
+  <div class="panel-footer">
+      <div class="align-items-center d-flex justify-content-between">
+        
+<div>
+
+  <button class="student-task-done-by btn btn-default btn-sm" data-task-id="21669" data-batch-id="569" data-toggle="modal" data-target="#task-21669-users-done-modal">
+    Help
+  </button>
+  <div class="modal fade users-done-modal" id="task-21669-users-done-modal" data-task-id="21669" data-batch-id="569">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title">Students who are done with "4. Introduction to react hook"</h4>
+        </div>
+        <div class="modal-body">
+            <div class="list-group">
+            </div>
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <div class="error"></div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+        <div class="fs-4">
+            <strong class="text-primary">
+              <span id="task-21669-score-info-score">0</span>/5
+            </strong>
+            <span class="text-muted">pts</span>
+        </div>
+      </div>
+
+
+  </div>
+</div>
+
+    </div>
+
+
+
+          <div class="gap">
+  <div data-react-class="projects/ProjectReview" data-react-props="{&quot;correction&quot;:{&quot;statusURI&quot;:&quot;/corrections/704874/status_self_paced.json&quot;,&quot;startReviewURI&quot;:&quot;/corrections/704874/start_auto_review_self_paced.json&quot;},&quot;csrfToken&quot;:&quot;7xGRtaKchUJFkIJVWoP-xLBIVjqUkQYsaKnxUmI1Z58lsnGzOxBWQHQ28p26NfZSUkb6X_ozz5MOg-NdiUTDjA&quot;,&quot;nextProject&quot;:{&quot;details&quot;:{&quot;curriculum_completed&quot;:true,&quot;message&quot;:&quot;You have successfully completed all the projects! Well done!&quot;,&quot;uri&quot;:null},&quot;fetchURI&quot;:&quot;/projects/2365/next&quot;},&quot;pollingInterval&quot;:10000,&quot;progress&quot;:{&quot;auto_review&quot;:{&quot;can_execute&quot;:true,&quot;completion&quot;:{&quot;count&quot;:1,&quot;is_completed&quot;:true,&quot;percentage&quot;:100.0},&quot;inability_to_execute_reason&quot;:null},&quot;tasks&quot;:[{&quot;id&quot;:21665,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:4,&quot;score&quot;:0.0}},{&quot;id&quot;:21666,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:15,&quot;score&quot;:0}},{&quot;id&quot;:21667,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:23,&quot;score&quot;:0}},{&quot;id&quot;:21668,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:14,&quot;score&quot;:0}},{&quot;id&quot;:21669,&quot;progress_score&quot;:{&quot;progress&quot;:0.0,&quot;score&quot;:0.0},&quot;score_info&quot;:{&quot;passed&quot;:false,&quot;points&quot;:5,&quot;score&quot;:0}}],&quot;summary&quot;:{&quot;completion&quot;:0.0,&quot;score&quot;:{&quot;mandatory&quot;:0.0,&quot;optional&quot;:null}},&quot;can_skip&quot;:false,&quot;can_start_peer_review&quot;:true},&quot;peerReview&quot;:{&quot;availableReviewersURI&quot;:&quot;/corrections/704874/available_reviewers.json&quot;,&quot;canReviewPeerDirectly&quot;:true,&quot;correctCorrectionURI&quot;:&quot;https://intranet.hbtn.io/corrections/704874/correct&quot;,&quot;qaReviewsURI&quot;:&quot;/corrections/to_review&quot;,&quot;readyForReviewURI&quot;:&quot;/corrections/704874/toggle_ready_for_review.json&quot;,&quot;reviewDeadline&quot;:null,&quot;synchronousManualReview&quot;:false},&quot;project&quot;:{&quot;completion&quot;:0.0,&quot;id&quot;:2365,&quot;index&quot;:0,&quot;isAccessible&quot;:true,&quot;isOptional&quot;:false,&quot;imagePath&quot;:&quot;/assets/pathway/005_color-7e093441390199aa2cdc4b6f6478f1def43125d09c333d9ba21227c9a56cbc0d.png&quot;,&quot;name&quot;:&quot;React state&quot;,&quot;score&quot;:{&quot;mandatory&quot;:0.0,&quot;optional&quot;:null},&quot;tasksCount&quot;:0},&quot;skipURI&quot;:&quot;/corrections/704874/skip&quot;,&quot;taskLevelReviewTypeHumanized&quot;:&quot;Your score will be updated as you progress.&quot;}" data-react-cache-id="projects/ProjectReview-0"><div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">Score</h3></div><div class="panel-body"><div class="align-items-center d-flex gap-5"><div class="pathway" style="padding: 10px 30px 40px;"><div class="project-circle " style="border-radius: 100%; box-shadow: rgb(229, 230, 230) 10px 20px 10px; height: 125px; margin: auto; padding: 5px; width: 125px;"><div data-test-id="CircularProgressbarWithChildren"><div style="position: relative; width: 100%; height: 100%;"><svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar" style="height: 115px; vertical-align: middle; width: 115px;"><path class="CircularProgressbar-trail" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 0px;"></path><path class="CircularProgressbar-path" d="
+      M 50,50
+      m 0,-48.5
+      a 48.5,48.5 0 1 1 0,97
+      a 48.5,48.5 0 1 1 0,-97
+    " stroke-width="3" fill-opacity="0" style="stroke-dasharray: 304.734px, 304.734px; stroke-dashoffset: 304.734px;"></path></svg><div data-test-id="CircularProgressbarWithChildren__children" style="position: absolute; width: 100%; height: 100%; margin-top: -100%; display: flex; flex-direction: column; justify-content: center; align-items: center;"><div class="position-relative"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="React state"><div class="align-items-center d-flex justify-content-center project-circle-body active" style="border-radius: 100%; height: 100px; width: 100px;"><img alt="Project badge" src="/assets/pathway/005_color-7e093441390199aa2cdc4b6f6478f1def43125d09c333d9ba21227c9a56cbc0d.png" width="60%"></div></span><div class="p-1 position-absolute project-circle-score text-center" style="border-radius: 10px; width: 100px;"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Score of Mandatory Tasks"><span class="d-block">0%</span></span></div></div></div></div></div></div></div><div style="flex-basis: 100%;"><p class="mb-2 text-primary"><span>Your score will be updated as you progress.</span></p><p>Now that you are ready to be reviewed, share your link to your peers. You can find some <a data-toggle="modal" href="#available-reviewers-modal">here</a>.</p><div class="modal fade" id="available-reviewers-modal"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button><h4 class="modal-title">Contact one of your peers</h4></div><div class="modal-body"><div class="block-spinner" style="text-align: center;"><div style="animation: 1.4s ease-in-out -0.32s infinite normal both running sk-bouncedelay; background-color: rgb(51, 51, 51); border-radius: 50%; display: inline-block; height: 18px; width: 18px;"></div><div style="animation: 1.4s ease-in-out -0.16s infinite normal both running sk-bouncedelay; background-color: rgb(51, 51, 51); border-radius: 50%; display: inline-block; height: 18px; width: 18px;"></div><div style="animation: 1.4s ease-in-out 0s infinite normal both running sk-bouncedelay; background-color: rgb(51, 51, 51); border-radius: 50%; display: inline-block; height: 18px; width: 18px;"></div></div></div></div></div></div><div class="input-group my-2"><span class="form-control user-select-all">https://intranet.hbtn.io/corrections/704874/correct</span><span class="input-group-btn"><a class="btn btn-default"><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Click to copy"><span role="button"><i aria-hidden="true" class="fa fa-clipboard fa-fw"></i></span></span></a></span></div><p><span>Don't forget to <a href="/corrections/to_review">review one of them</a>.</span></p><div class="d-flex flex-wrap gap-3 justify-content-between mt-4"><div class="btn-group"><button class="btn btn-primary" id="project-launch-review-btn"><i aria-hidden="true" class="fa fa-paper-plane"></i><span class="ml-2">Review all the tasks</span></button></div><div></div></div></div></div></div></div></div>
+</div>
+
+
+
+          <div class="modal fade" id="container-specs-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title">Recommended Sandboxes</h4></div><div class="modal-body"><div data-react-class="user_containers/ContainerSpecs" data-react-props="{&quot;containerModelName&quot;:&quot;Sandbox&quot;,&quot;containerSpecs&quot;:[{&quot;description&quot;:&quot;\u003cp\u003eUbuntu 18.04 with Python 3.7\u003c/p\u003e\n&quot;,&quot;id&quot;:23,&quot;name&quot;:&quot;Ubuntu 18.04 - Python 3.7&quot;,&quot;online&quot;:true,&quot;container&quot;:{&quot;container_id&quot;:&quot;4e78b7cd748b965a497e6911c6594f11d62a7436f140f9cdb845dcfacaf7cf10&quot;,&quot;id&quot;:33746,&quot;restart_uri&quot;:&quot;/user_containers/33746/restart.json&quot;,&quot;status&quot;:&quot;running&quot;,&quot;uri&quot;:&quot;/user_containers/33746.json&quot;,&quot;wake_uri&quot;:&quot;/user_containers/33746/wake.json&quot;,&quot;webterm_uri&quot;:&quot;/user_containers/33746/webterm&quot;,&quot;host&quot;:&quot;4e78b7cd748b.32cfbfa7.hbtn-cod.io&quot;,&quot;password&quot;:&quot;aad6833d3a9b1c2e02f9&quot;,&quot;ports&quot;:{&quot;8000&quot;:34887,&quot;8080&quot;:34886,&quot;22&quot;:34893,&quot;3000&quot;:34891,&quot;4000&quot;:34890,&quot;5000&quot;:34889,&quot;5001&quot;:34888,&quot;80&quot;:34892}}},{&quot;description&quot;:&quot;\u003cp\u003eUbuntu 18.04 with Node 12\u003c/p\u003e\n&quot;,&quot;id&quot;:29,&quot;name&quot;:&quot;Ubuntu 18.04 - Node 12&quot;,&quot;online&quot;:true}],&quot;containersLimit&quot;:5,&quot;csrfToken&quot;:&quot;PR6-dRdEFAUlCzZdNo05OHc1flWhFN7y70yZPsnG1AP3vV5zjsjHBxStRpXWOzGulTvSMM-2F02JZosxIrdwEA&quot;,&quot;startStatusURI&quot;:&quot;/user_containers/start_status.json&quot;,&quot;startURI&quot;:&quot;/user_containers/start.json&quot;}" data-react-cache-id="user_containers/ContainerSpecs-0"><div><div class="d-flex gap-4 sandboxes-filters"><a class="btn btn-outline-primary"><i aria-hidden="true" class="fa fa-filter"></i><span class="ml-2">Running only</span></a><div class="align-items-center d-flex" style="position: relative; width: 100%;"><input class="form-control" placeholder="Search for an image ..." type="search" value=""></div></div><div class="mt-3"><h3>2 images<small class="ml-2">(1/5 Sandboxes spawned)</small></h3></div><div class="mt-3"><div class="panel panel-default"><div class="panel-body border-left-success" style="border-left: 6px solid;"><div class="align-items-center d-flex flex-wrap justify-content-between"><div><h3 class="mt-0"><i aria-hidden="true" class="fa fa-terminal text-success"></i><span class="ml-2">Ubuntu 18.04 - Python 3.7</span></h3><div class="mt-2 text-muted"><p>Ubuntu 18.04 with Python 3.7</p>
+</div></div><div class="d-flex flex-wrap gap-5"><div class="align-items-center d-flex gap-3"><div><span data-container="body" data-html="false" data-placement="top" data-toggle="tooltip" title="" data-original-title="Copy SSH command"><span role="button"><button class="btn btn-default">SSH</button></span></span></div><div><span data-container="body" data-html="false" data-placement="top" data-toggle="tooltip" title="" data-original-title="Copy SFTP command"><span role="button"><button class="btn btn-default">SFTP</button></span></span></div><a class="btn btn-webterm" href="/user_containers/33746/webterm" rel="noreferrer" target="_blank"><i aria-hidden="true" class="fa fa-terminal"></i><span class="ml-2">Webterm</span></a></div><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Restart your Sandbox"><a class="btn btn-warning "><i aria-hidden="true" class="fa fa-power-off"></i><span class="ml-2">Restart</span></a></span><a class="btn btn-danger"><i aria-hidden="true" class="fa fa-trash"></i><span class="ml-2">Destroy</span></a></div></div><div class="d-flex flex-wrap gap-5 mt-3"><div class="p-4" style="flex-shrink: 0;"><div class="d-flex flex-column gap-3"><h4 class="mt-0"><i aria-hidden="true" class="fa fa-user text-info"></i><span class="ml-2">Credentials</span></h4><div class="d-flex gap-2"><strong>Host</strong><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Click to copy"><span role="button"><small>4e78b7cd748b.32cfbfa7.hbtn-cod.io</small></span></span></div><div class="d-flex gap-2"><strong>Username</strong><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Click to copy"><span role="button"><small>4e78b7cd748b</small></span></span></div><div class="d-flex gap-2"><strong>Password</strong><span data-container="body" data-html="false" data-placement="auto top" data-toggle="tooltip" title="" data-original-title="Click to copy"><span role="button"><small>aad6833d3a9b1c2e02f9</small></span></span></div></div></div><div class="p-4" style="flex: 1 1 40%;"><div class="d-flex flex-column gap-3"><h4 class="mt-0"><i aria-hidden="true" class="fa fa-globe text-info"></i><span class="ml-2">Web access</span></h4><div class="align-items-center d-flex flex-wrap gap-2"><a class="btn btn-outline-primary" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io" rel="noreferrer" target="_blank">HTTP</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:3000" rel="noreferrer" target="_blank">3000</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:4000" rel="noreferrer" target="_blank">4000</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:5000" rel="noreferrer" target="_blank">5000</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:5001" rel="noreferrer" target="_blank">5001</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:8000" rel="noreferrer" target="_blank">8000</a><a class="btn btn-default" href="http://4e78b7cd748b.32cfbfa7.hbtn-cod.io:8080" rel="noreferrer" target="_blank">8080</a></div></div></div><div class="p-4" style="flex: 1 1 35%;"><div class="d-flex flex-column gap-3"><h4 class="mt-0"><i aria-hidden="true" class="fa fa-map-signs text-info"></i><span class="ml-2">Port mapping</span></h4><div class="align-items-center d-flex flex-wrap"><div class="align-items-center text-primary d-flex gap-2" style="padding: 5px 10px;"><strong>SSH</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34893</span></div><div class="align-items-center text-primary d-flex gap-2" style="padding: 5px 10px;"><strong>HTTP</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34892</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>3000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34891</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>4000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34890</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>5000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34889</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>5001</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34888</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>8000</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34887</span></div><div class="align-items-center  d-flex gap-2" style="padding: 5px 10px;"><strong>8080</strong><i aria-hidden="true" class="fa fa-long-arrow-right"></i><span>34886</span></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-body"><div class="align-items-center d-flex flex-wrap justify-content-between"><div><h3 class="mt-0"><i aria-hidden="true" class="fa fa-terminal text-danger"></i><span class="ml-2">Ubuntu 18.04 - Node 12</span></h3><div class="mt-2 text-muted"><p>Ubuntu 18.04 with Node 12</p>
+</div></div><div class="d-flex flex-wrap gap-5"><a class="btn btn-success"><i aria-hidden="true" class="fa fa-play"></i><span class="ml-2">Run</span></a></div></div></div></div></div></div></div></div></div></div></div>
+          <div class="modal fade" id="sandboxes-modal"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button><h4 class="modal-title">Recommended Sandboxes</h4></div><div class="modal-body"><div data-react-class="user_sandboxes/Sandboxes" data-react-props="{&quot;images&quot;:[{&quot;id&quot;:16,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;US East (N. Virginia)\t&quot;},{&quot;id&quot;:50,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;US East (N. Virginia)\t&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;South America (São Paulo)&quot;},{&quot;id&quot;:51,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;South America (São Paulo)&quot;},{&quot;id&quot;:14,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;Europe (Paris)&quot;},{&quot;id&quot;:52,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;Europe (Paris)&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;Ubuntu 22.04 LTS&quot;,&quot;aws_region&quot;:&quot;Asia Pacific (Sydney)&quot;},{&quot;id&quot;:53,&quot;name&quot;:&quot;Ubuntu 18.04 LTS&quot;,&quot;aws_region&quot;:&quot;Asia Pacific (Sydney)&quot;}],&quot;sandboxesUri&quot;:&quot;/user_sandboxes&quot;,&quot;csrfToken&quot;:&quot;Vrxx4davC1hysQMQHyjKEWa0S53ZGD0xDAULQExP51GcH5HnTyPYWkMXc9j_nsKHhLrn-Le69I5qLxlPpz5DQg&quot;,&quot;maxNumberOfContainers&quot;:2}" data-react-cache-id="user_sandboxes/Sandboxes-0"><div class="d-flex flex-column"><div class="dropdown pull-right" style="align-self: end;"><button aria-expanded="false" aria-haspopup="true" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" type="button">New sandbox <span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-right"><li class="divider" role="separator"></li><li class="dropdown-header">US East (N. Virginia)	</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">South America (São Paulo)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">Europe (Paris)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li><li class="divider" role="separator"></li><li class="dropdown-header">Asia Pacific (Sydney)</li><li><a role="button">Ubuntu 18.04 LTS</a></li><li><a role="button">Ubuntu 22.04 LTS</a></li></ul></div><div class="mt-2 alert alert-info">No sandboxes yet!</div></div></div></div></div></div></div>
+
+      <div class="d-flex justify-content-around align-items-center">
+          <div>
+            <a data-toggle="tooltip" title="" class="btn btn-primary" role="button" href="/projects/2363" data-original-title="React inline styling">Previous project</a>
+          </div>
+      </div>
+  
+            </div>
+          </body>
+        </html>
+      
